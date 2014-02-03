@@ -1,0 +1,687 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400,700");
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 10, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 14, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 18, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 26, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 31, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, ../sass/_fonts.scss */
+body {
+  font: 100%/1.5 'Open Sans', verdana, arial, helvetica, sans-serif;
+  color: #40363a;
+}
+
+/* line 9, ../sass/_fonts.scss */
+p {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0 0 0.5em;
+}
+/* line 14, ../sass/_fonts.scss */
+#portfolio p {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  padding: 0 10px;
+  margin: 0 0 15px;
+}
+
+/* line 23, ../sass/_fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', 'Trebuchet MS', verdana, arial, helvetica, helve, sans-serif;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 1em;
+}
+
+/* line 30, ../sass/_fonts.scss */
+h1 {
+  display: inline;
+  float: left;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/_fonts.scss */
+h1 a, h1 a:hover {
+  color: white;
+}
+
+/* line 43, ../sass/_fonts.scss */
+h2 {
+  font-size: 2.25em;
+}
+/* line 45, ../sass/_fonts.scss */
+#welcome h2 {
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+/* line 52, ../sass/_fonts.scss */
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 35px 0 20px;
+  color: white;
+}
+
+/* line 59, ../sass/_fonts.scss */
+label {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: white;
+}
+
+/* line 65, ../sass/_fonts.scss */
+textarea, input[type='text'], input[type='email'], input {
+  font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+/* line 72, ../sass/_fonts.scss */
+#submit {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* Large desktop */
+@media (min-width: 980px) {
+  /* line 81, ../sass/_fonts.scss */
+  body {
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 89, ../sass/_fonts.scss */
+  body {
+    font-size: 90%;
+    line-height: 80%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 97, ../sass/_fonts.scss */
+  body {
+    font-size: 80%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 500px) {
+  /* line 104, ../sass/_fonts.scss */
+  body {
+    font-size: 80%;
+    line-height: 50%;
+  }
+}
+/* line 1, ../sass/_grid.scss */
+.container {
+  padding: 0;
+  margin: 0 auto;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 7, ../sass/_grid.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+/* line 13, ../sass/_grid.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 17, ../sass/_grid.scss */
+section {
+  padding: 2.5em 0;
+}
+
+/* line 21, ../sass/_grid.scss */
+.col {
+  display: block;
+  position: relative;
+  float: left;
+  width: 185px;
+  margin: 20px 25px;
+}
+
+/* IMAGES */
+/* line 7, ../sass/main.scss */
+img, canvas {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
+
+/* line 14, ../sass/main.scss */
+canvas {
+  border: 1px dotted;
+}
+
+/* LINKS */
+/* line 19, ../sass/main.scss */
+a {
+  color: #f14b51;
+  -webitkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+/* line 26, ../sass/main.scss */
+a:hover {
+  color: #c70f16;
+}
+/* line 29, ../sass/main.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 32, ../sass/main.scss */
+a a:hover, a a:active {
+  outline: 0;
+}
+
+/* BLOCKQUOTES */
+/* line 38, ../sass/main.scss */
+blockquote {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+}
+/* line 46, ../sass/main.scss */
+blockquote:before {
+  display: block;
+  position: absolute;
+  top: -0.25em;
+  left: -.35em;
+  content: "\201C";
+  font: 3.25em Georgia, serif;
+  color: #f14b51;
+}
+/* line 55, ../sass/main.scss */
+blockquote cite {
+  display: block;
+  margin-top: 1em;
+  color: #f14b51;
+}
+/* line 59, ../sass/main.scss */
+blockquote cite:before {
+  color: #f14b51;
+  content: "\2013 \2009";
+}
+
+/* MAIN LAYOUT */
+/* line 67, ../sass/main.scss */
+#masthead {
+  background: url(../../img/scribbleowl-full.jpg) 0 50%;
+  background-size: cover;
+  height: 22.5em;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+  /* line 74, ../sass/main.scss */
+  #masthead {
+    background-image: url(../../img/scribbleowl-medium.jpg);
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 80, ../sass/main.scss */
+  #masthead {
+    background-image: url(../../img/scribbleowl-small.jpg);
+  }
+}
+/* line 85, ../sass/main.scss */
+#navigation {
+  background: #40363a;
+  padding: 0;
+}
+/* line 88, ../sass/main.scss */
+#navigation nav {
+  float: right;
+}
+/* line 90, ../sass/main.scss */
+#navigation nav li {
+  display: block;
+  float: left;
+  font-size: 1.125em;
+  line-height: 4.4em;
+  margin-left: 0.25em;
+}
+/* line 96, ../sass/main.scss */
+#navigation nav li a {
+  padding: 0.25em 0.5em;
+  color: #fff;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -webitkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+}
+/* line 109, ../sass/main.scss */
+#navigation nav li a:hover {
+  background: rgba(241, 75, 81, 0.25);
+}
+/* line 112, ../sass/main.scss */
+#navigation nav li a.current {
+  background: #f14b51;
+}
+
+/* line 120, ../sass/main.scss */
+#welcome {
+  padding: 5em 0;
+}
+/* line 122, ../sass/main.scss */
+#welcome p {
+  text-align: center;
+}
+
+/* line 127, ../sass/main.scss */
+#expertise {
+  background: #a3d9ac;
+}
+/* line 129, ../sass/main.scss */
+#expertise p {
+  text-align: center;
+}
+/* line 132, ../sass/main.scss */
+#expertise canvas {
+  border: none;
+}
+
+/* line 138, ../sass/main.scss */
+#testimonials {
+  background: url(../../img/testimonials.png);
+}
+/* line 140, ../sass/main.scss */
+#testimonials ol {
+  margin: 20px 0 0;
+  text-align: center;
+}
+/* line 144, ../sass/main.scss */
+#testimonials li {
+  margin: 0 5px;
+  display: inline-block;
+}
+/* line 147, ../sass/main.scss */
+#testimonials li a {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #999999;
+  text-indent: -9999px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webitkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+/* line 162, ../sass/main.scss */
+#testimonials li a:hover {
+  background-color: #bfbfbf;
+}
+/* line 165, ../sass/main.scss */
+#testimonials li a.active {
+  background-color: #f14b51;
+}
+
+/* line 173, ../sass/main.scss */
+#portfolio {
+  background: #d3ffc4;
+}
+/* line 175, ../sass/main.scss */
+#portfolio img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 182, ../sass/main.scss */
+#portfolio .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  height: 0;
+  opacity: 0;
+  background: #f14b51;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 10;
+}
+/* line 198, ../sass/main.scss */
+#portfolio .col:hover .hover {
+  height: 100%;
+  opacity: 1;
+}
+/* line 202, ../sass/main.scss */
+#portfolio .hoverInner {
+  position: relative;
+  top: 25px;
+  height: 0;
+  opacity: 0;
+  text-align: center;
+}
+/* line 209, ../sass/main.scss */
+#portfolio .col:hover .hoverInner {
+  height: 100%;
+  opacity: 1;
+  -webitkit-transition: all 500ms ease-in-out 0s;
+  -moz-transition: all 500ms ease-in-out 0s;
+  -o-transition: all 500ms ease-in-out 0s;
+  transition: all 500ms ease-in-out 0s;
+  top: 0;
+}
+/* line 218, ../sass/main.scss */
+#portfolio .cta {
+  cursor: pointer;
+  background: #40363a;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 34px;
+  color: white;
+  width: 85px;
+  margin: 0 auto;
+}
+
+/* line 234, ../sass/main.scss */
+#contact {
+  background: #40363a;
+}
+/* line 236, ../sass/main.scss */
+#contact h2, #contact p {
+  color: white;
+}
+/* line 239, ../sass/main.scss */
+#contact .col {
+  width: 48%;
+  margin: 0 1%;
+}
+/* line 243, ../sass/main.scss */
+#contact .textfield, #contact .textarea {
+  padding: 0 0 20px;
+}
+/* line 246, ../sass/main.scss */
+#contact #contactForm label {
+  cursor: pointer;
+  display: block;
+}
+/* line 250, ../sass/main.scss */
+#contact textarea, #contact input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 40px;
+  width: 100%;
+  padding: 4px 6px;
+  background: white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #999999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  outline: none;
+}
+/* line 268, ../sass/main.scss */
+#contact textarea:focus, #contact input:focus {
+  box-shadow: none;
+  border: 1px solid #f14b51;
+}
+/* line 273, ../sass/main.scss */
+#contact textarea {
+  height: 183px;
+}
+/* line 276, ../sass/main.scss */
+#contact input {
+  margin: 0 0 10px;
+  height: 40px;
+}
+/* line 280, ../sass/main.scss */
+#contact #submit {
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: #f14b51;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  height: 40px;
+  -webitkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+/* line 301, ../sass/main.scss */
+#contact #submit:hover {
+  background: #f36368;
+}
+
+/* line 308, ../sass/main.scss */
+#footer #copyright {
+  float: left;
+  font-size: 1.25em;
+  line-height: 60px;
+}
+/* line 313, ../sass/main.scss */
+#footer #social {
+  float: right;
+}
+/* line 315, ../sass/main.scss */
+#footer #social li {
+  float: left;
+}
+/* line 317, ../sass/main.scss */
+#footer #social li a {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: url(../../img/sprite.png) 0 0 no-repeat;
+  text-indent: -9999px;
+  -webitkit-transition: background-position 0.5s ease;
+  -moz-transition: background-position 0.5s ease;
+  -o-transition: background-position 0.5s ease;
+  transition: background-position 0.5s ease;
+}
+/* line 327, ../sass/main.scss */
+#footer #social li a:hover {
+  background-position-y: -60px;
+}
+/* line 332, ../sass/main.scss */
+#footer #social .behance {
+  background-color: #0686f1;
+  background-position: 0 0;
+}
+/* line 336, ../sass/main.scss */
+#footer #social .dribbble {
+  background-color: #d8457d;
+  background-position: -60px 0;
+}
+/* line 340, ../sass/main.scss */
+#footer #social .facebook {
+  background-color: #07549f;
+  background-position: -120px 0;
+}
+/* line 344, ../sass/main.scss */
+#footer #social .github {
+  background-color: #bbbbbb;
+  background-position: -180px 0;
+}
+/* line 348, ../sass/main.scss */
+#footer #social .googleplus {
+  background-color: #272727;
+  background-position: -240px 0;
+}
+/* line 352, ../sass/main.scss */
+#footer #social .linkedin {
+  background-color: #017eb4;
+  background-position: -300px 0;
+}
+/* line 356, ../sass/main.scss */
+#footer #social .twitter {
+  background-color: #29a9e1;
+  background-position: -360px 0;
+}
+
+/* Large Desktop */
+@media (min-width: 980px) {
+  /* line 365, ../sass/main.scss */
+  .container {
+    width: 940px;
+  }
+
+  /* line 368, ../sass/main.scss */
+  .container.inner {
+    text-align: center;
+    overflow: hidden;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 376, ../sass/main.scss */
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  /* line 380, ../sass/main.scss */
+  .container.inner {
+    width: 705px;
+  }
+
+  /* line 383, ../sass/main.scss */
+  #contact textarea {
+    height: 179px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 390, ../sass/main.scss */
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  /* line 394, ../sass/main.scss */
+  .container.inner {
+    width: 470px;
+  }
+
+  /* line 397, ../sass/main.scss */
+  #footer #copyright {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 401, ../sass/main.scss */
+  #social {
+    display: none;
+  }
+
+  /* line 404, ../sass/main.scss */
+  #contact .col {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 500px) {
+  /* line 412, ../sass/main.scss */
+  .container {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  /* line 416, ../sass/main.scss */
+  .container.inner {
+    width: auto;
+  }
+
+  /* line 419, ../sass/main.scss */
+  .col {
+    float: none;
+    margin: 25px auto 50px;
+  }
+}

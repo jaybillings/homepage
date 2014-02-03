@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ScribbleOwl</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="sass/stylesheets/main.css" media="all" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.colorbox.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/scribbleowl.js"></script>
+	
+</head>
+<body>
+    <header>
+        <section id="masthead">
+                
+        </section>
+        <section id="navigation">
+            <div class="container">
+                <h1><a href="#">ScribbleOwl.</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#masthead" class="current">Home</a></li>
+                        <li><a href="#welcome">About</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section id="welcome">
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>I'm Jessica (Jay) Billings, a software designer and developer for the web. I specialize in creating clean, highly usable interfaces for web applications, but have the skills for all your development needs.</p>
+            <p>I've been in the industry for 5 years and have already worked with such large name companies as Microsoft, MTV, and AT&amp;T.</p>
+        </div>
+    </section>
+    <section id="expertise">
+        <div class="container">
+            <h2>Expertise</h2>
+            <div class="container inner">
+                <div class="col">
+					<input type="text" id="dial_css" class="dial" value="80">
+                    <p>CSS/CSS3</p>
+                </div>
+                <div class="col">
+					<input type="text" id="dial_html" class="dial" value="99">
+                    <p>HTML/HTML5</p>
+                </div>
+                <div class="col">
+					<input type="text" id="dial_js" class="dial" value="85">
+                    <p>JavaScript</p>
+                </div>
+                <div class="col">
+					<input type="text" id="dial_py" class="dial" value="70">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <blockquote><a href="#nsa"></a>Utilizing rapid prototyping techniques, Ms. Billings designed and developed a robust interface, and demonstrated the process for users to comment on along the development cycle. ... These techniques are uncommon among many developers; however, Ms. Billings made it a point of order to implement not only a robust technology, but development best practices. ... Through easy to use, self intuitive forms and viewing panes, the end user will increase their productivity time...
+                <cite>V32 Organization Director, NSA</cite>
+            </blockquote>
+            <!--><ol>
+                <li><a href="#nsa" class="active">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+            </ol>-->
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="container inner">
+                <div class="col">
+                    <img src="img/xbox-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Xbox One Settings</h3>
+                            <p>Settings views on Xbox One console</p>
+                            <div class="cta">View</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/admindash-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Admin Dashbord</h3>
+                            <p>Info for campaign admins</p>
+                            <div class="cta">View</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/liketool-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Like Tool</h3>
+                            <p>Streamined social media tool</p>
+                            <div class="cta">View</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/sharetool-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Mobile Share Tool</h3>
+                            <p>Old social media tool, turned responsive</p>
+                            <div class="cta">View</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/dash-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Meteor Dashboard</h3>
+                            <p>Meteor's main campaign dashboard</p>
+                            <div class="cta">View</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form name="contactForm" id="contactForm" action="send_contact.php" method="post">
+                <div class="col">
+                    <div class="textfield">
+                        <label for="name">Name</label>
+                        <input name="name" id="name" type="text" required/>
+                    </div>
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input name="email" id="email" type="email" required/>
+                    </div>
+                    <div class="textfield">
+                        <label for="phone">Phone</label>
+                        <input name="phone" id="phone" type="tel" />
+                    </div>
+					<div class="textfield">
+						<label for="human">Prove you're human</label>
+						<input id="human" type="text" name="human" placeholder="Yellow and red make what color?" />
+					</div>
+                </div>
+                <div class="col">
+                    <div class="textarea">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="6" cols="60"></textarea>
+                    </div>
+                    <div>
+                        <button id="submit" type="submit" name="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div id="copyright">&copy; 2014 Jessica Billings &bull; All rights reserved.</div>
+            <ul id="social">
+                <!--li><a href="#" class="behance">Behance</a></li-->
+                <!--<li><a href="#" class="dribbble">Dribbble</a></li>-->
+                <!--<li><a href="#" class="facebook">Facebook</a></li>-->
+                <li><a href="http://github.com/jcbbillings/" class="github">GitHub</a></li>
+                <!--<li><a href="#" class="googleplus">Google+</a></li>-->
+                <li><a href="http://www.linkedin.com/pub/jessica-billings/8/130/223/" class="linkedin">LinkedIn</a></li>
+                <li><a href="http://twitter.com/slaveofosiris" class="twitter">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
