@@ -20,10 +20,12 @@ if ($_POST['submit']) {
 				echo '<p>Something went wrong. Please try again! :(</p>';
 			}
 		} else if ($_POST['submit'] && $human != 'orange') {
-			echo '<p>Incorrect anti-spambot answer. Try googling it?</p>'
+			echo '<p>Incorrect anti-spambot answer. Try googling it?</p>';
 		}
 	} else {
 		echo '<p>Fill in the required fields.</p>';
 	}
 } 
+
+# Need to redirect back to homepage
 ?>
