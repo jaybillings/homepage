@@ -267,7 +267,7 @@ blockquote cite:before {
 /* MAIN LAYOUT */
 /* line 67, ../sass/main.scss */
 #masthead {
-  background: url(../../img/scribbleowl-full.jpg) 0 50%;
+  background: url(../img/scribbleowl-full.jpg) 0 50%;
   background-size: cover;
   height: 22.5em;
 }
@@ -275,13 +275,13 @@ blockquote cite:before {
 @media only screen and (max-width: 1024px) and (min-width: 481px) {
   /* line 74, ../sass/main.scss */
   #masthead {
-    background-image: url(../../img/scribbleowl-medium.jpg);
+    background-image: url(../img/scribbleowl-medium.jpg);
   }
 }
 @media only screen and (max-width: 480px) {
   /* line 80, ../sass/main.scss */
   #masthead {
-    background-image: url(../../img/scribbleowl-small.jpg);
+    background-image: url(../img/scribbleowl-small.jpg);
   }
 }
 /* line 85, ../sass/main.scss */
@@ -349,7 +349,7 @@ blockquote cite:before {
 
 /* line 138, ../sass/main.scss */
 #testimonials {
-  background: url(../../img/testimonials.png);
+  background: url(../img/testimonials.png);
 }
 /* line 140, ../sass/main.scss */
 #testimonials ol {
@@ -454,30 +454,42 @@ blockquote cite:before {
   width: 85px;
   margin: 0 auto;
 }
+/* line 231, ../sass/main.scss */
+#portfolio .cta a {
+  color: white;
+}
+/* line 235, ../sass/main.scss */
+#portfolio .box-content {
+  display: none;
+}
 
-/* line 234, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 #contact {
   background: #40363a;
 }
-/* line 236, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 #contact h2, #contact p {
   color: white;
 }
-/* line 239, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 #contact .col {
   width: 48%;
   margin: 0 1%;
 }
-/* line 243, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
+#contact .col a {
+  color: white;
+}
+/* line 252, ../sass/main.scss */
 #contact .textfield, #contact .textarea {
   padding: 0 0 20px;
 }
-/* line 246, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 #contact #contactForm label {
   cursor: pointer;
   display: block;
 }
-/* line 250, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 #contact textarea, #contact input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -497,21 +509,21 @@ blockquote cite:before {
   border-radius: 4px;
   outline: none;
 }
-/* line 268, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 #contact textarea:focus, #contact input:focus {
   box-shadow: none;
   border: 1px solid #f14b51;
 }
-/* line 273, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 #contact textarea {
   height: 183px;
 }
-/* line 276, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 #contact input {
   margin: 0 0 10px;
   height: 40px;
 }
-/* line 280, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 #contact #submit {
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -534,85 +546,91 @@ blockquote cite:before {
   -o-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
-/* line 301, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 #contact #submit:hover {
   background: #f36368;
 }
 
-/* line 308, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 #footer #copyright {
   float: left;
   font-size: 1.25em;
   line-height: 60px;
 }
-/* line 313, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 #footer #social {
   float: right;
 }
-/* line 315, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 #footer #social li {
   float: left;
 }
-/* line 317, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 #footer #social li a {
   display: block;
   height: 60px;
   width: 60px;
-  background: url(../../img/sprite.png) 0 0 no-repeat;
+  background: url(../img/sprite.png) 0 0 no-repeat;
   text-indent: -9999px;
   -webitkit-transition: background-position 0.5s ease;
   -moz-transition: background-position 0.5s ease;
   -o-transition: background-position 0.5s ease;
   transition: background-position 0.5s ease;
 }
-/* line 327, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 #footer #social li a:hover {
   background-position-y: -60px;
 }
-/* line 332, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 #footer #social .behance {
   background-color: #0686f1;
   background-position: 0 0;
 }
-/* line 336, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 #footer #social .dribbble {
   background-color: #d8457d;
   background-position: -60px 0;
 }
-/* line 340, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 #footer #social .facebook {
   background-color: #07549f;
   background-position: -120px 0;
 }
-/* line 344, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 #footer #social .github {
   background-color: #bbbbbb;
   background-position: -180px 0;
 }
-/* line 348, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 #footer #social .googleplus {
   background-color: #272727;
   background-position: -240px 0;
 }
-/* line 352, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 #footer #social .linkedin {
   background-color: #017eb4;
   background-position: -300px 0;
 }
-/* line 356, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 #footer #social .twitter {
   background-color: #29a9e1;
   background-position: -360px 0;
 }
 
+/* Colorbox alterations */
+/* line 373, ../sass/main.scss */
+#cboxTitle {
+  margin-bottom: 30px !important;
+}
+
 /* Large Desktop */
 @media (min-width: 980px) {
-  /* line 365, ../sass/main.scss */
+  /* line 379, ../sass/main.scss */
   .container {
     width: 940px;
   }
 
-  /* line 368, ../sass/main.scss */
+  /* line 382, ../sass/main.scss */
   .container.inner {
     text-align: center;
     overflow: hidden;
@@ -620,24 +638,6 @@ blockquote cite:before {
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 376, ../sass/main.scss */
-  .container {
-    width: 96%;
-    margin: 0 auto;
-  }
-
-  /* line 380, ../sass/main.scss */
-  .container.inner {
-    width: 705px;
-  }
-
-  /* line 383, ../sass/main.scss */
-  #contact textarea {
-    height: 179px;
-  }
-}
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
   /* line 390, ../sass/main.scss */
   .container {
     width: 96%;
@@ -646,21 +646,39 @@ blockquote cite:before {
 
   /* line 394, ../sass/main.scss */
   .container.inner {
-    width: 470px;
+    width: 705px;
   }
 
   /* line 397, ../sass/main.scss */
+  #contact textarea {
+    height: 179px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 404, ../sass/main.scss */
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  /* line 408, ../sass/main.scss */
+  .container.inner {
+    width: 470px;
+  }
+
+  /* line 411, ../sass/main.scss */
   #footer #copyright {
     float: none;
     text-align: center;
   }
 
-  /* line 401, ../sass/main.scss */
+  /* line 415, ../sass/main.scss */
   #social {
     display: none;
   }
 
-  /* line 404, ../sass/main.scss */
+  /* line 418, ../sass/main.scss */
   #contact .col {
     width: 100%;
     margin: 0 auto;
@@ -668,18 +686,18 @@ blockquote cite:before {
 }
 /* Landscape phones and down */
 @media (max-width: 500px) {
-  /* line 412, ../sass/main.scss */
+  /* line 426, ../sass/main.scss */
   .container {
     width: auto;
     margin: 0 10px;
   }
 
-  /* line 416, ../sass/main.scss */
+  /* line 430, ../sass/main.scss */
   .container.inner {
     width: auto;
   }
 
-  /* line 419, ../sass/main.scss */
+  /* line 433, ../sass/main.scss */
   .col {
     float: none;
     margin: 25px auto 50px;

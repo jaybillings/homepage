@@ -65,20 +65,20 @@ blockquote {
 
 /* MAIN LAYOUT */
 #masthead {
-	background: url(../../img/scribbleowl-full.jpg) 0 50%;
+	background: url(../img/scribbleowl-full.jpg) 0 50%;
 	background-size: cover;
 	height: 22.5em;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 481px) {
 	#masthead {
-		background-image: url(../../img/scribbleowl-medium.jpg);
+		background-image: url(../img/scribbleowl-medium.jpg);
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	#masthead {
-		background-image: url(../../img/scribbleowl-small.jpg);
+		background-image: url(../img/scribbleowl-small.jpg);
 	}
 }
 
@@ -136,7 +136,7 @@ blockquote {
 }
 
 #testimonials {
-	background: url(../../img/testimonials.png);
+	background: url(../img/testimonials.png);
 	ol {
 		margin: 20px 0 0;
 		text-align: center;
@@ -228,6 +228,12 @@ blockquote {
 		color: white;
 		width: 85px;
 		margin: 0 auto;
+		a {
+			color: $white;
+		}
+	}
+	.box-content {
+		display: none;
 	}
 }
 
@@ -239,6 +245,9 @@ blockquote {
 	.col {
 		width: 48%;
 		margin: 0 1%;
+		a {
+			color: $white;
+		}
 	}
 	.textfield, .textarea {
 		padding: 0 0 20px;
@@ -318,7 +327,7 @@ blockquote {
 				display: block;
 				height: 60px;
 				width: 60px;
-				background: url(../../img/sprite.png) 0 0 no-repeat;
+				background: url(../img/sprite.png) 0 0 no-repeat;
 				text-indent: -9999px;
 				-webitkit-transition: background-position 0.5s ease;
 				-moz-transition: background-position 0.5s ease;
@@ -358,6 +367,11 @@ blockquote {
 			background-position: -360px 0;
 		}
 	}
+}
+
+/* Colorbox alterations */
+#cboxTitle {
+	margin-bottom: 30px !important;
 }
 
 /* Large Desktop */

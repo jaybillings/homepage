@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="sass/stylesheets/main.css" media="all" />
+    <link rel="stylesheet" href="stylesheets/main.css" media="all" />
+	<link rel="stylesheet" href="stylesheets/colorbox.css" media="all" />
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/jquery.colorbox.js"></script>
@@ -75,11 +76,11 @@
             <blockquote><a href="#nsa"></a>Utilizing rapid prototyping techniques, Ms. Billings designed and developed a robust interface, and demonstrated the process for users to comment on along the development cycle. ... These techniques are uncommon among many developers; however, Ms. Billings made it a point of order to implement not only a robust technology, but development best practices. ... Through easy to use, self intuitive forms and viewing panes, the end user will increase their productivity time...
                 <cite>V32 Organization Director, NSA</cite>
             </blockquote>
-            <!--><ol>
+            <!--ol>
                 <li><a href="#nsa" class="active">1</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">1</a></li>
-            </ol>-->
+            </ol-->
         </div>
     </section>
     <section id="portfolio">
@@ -92,7 +93,7 @@
                         <div class="hoverInner">
                             <h3>Xbox One Settings</h3>
                             <p>Settings views on Xbox One console</p>
-                            <div class="cta">View</div>
+                            <a id="xbox-link" href="#portfolio"><div class="cta">View</div></a>
                         </div>
                     </div>
                 </div>
@@ -100,9 +101,9 @@
                     <img src="img/admindash-pre.png" />
                     <div class="hover">
                         <div class="hoverInner">
-                            <h3>Admin Dashbord</h3>
+                            <h3>Admin Dashboard</h3>
                             <p>Info for campaign admins</p>
-                            <div class="cta">View</div>
+                            <a id="admin-link" href="#portfolio"><div class="cta">View</div></a>
                         </div>
                     </div>
                 </div>
@@ -111,18 +112,8 @@
                     <div class="hover">
                         <div class="hoverInner">
                             <h3>Like Tool</h3>
-                            <p>Streamined social media tool</p>
-                            <div class="cta">View</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="img/sharetool-pre.png" />
-                    <div class="hover">
-                        <div class="hoverInner">
-                            <h3>Mobile Share Tool</h3>
-                            <p>Old social media tool, turned responsive</p>
-                            <div class="cta">View</div>
+                            <p>Streamlined social media tool</p>
+                            <a id="liketool-link" href="#portfolio"><div class="cta">View</div></a>
                         </div>
                     </div>
                 </div>
@@ -132,10 +123,57 @@
                         <div class="hoverInner">
                             <h3>Meteor Dashboard</h3>
                             <p>Meteor's main campaign dashboard</p>
-                            <div class="cta">View</div>
+                            <a id="dash-link" href="#portfolio"><div class="cta">View</div></a>
                         </div>
                     </div>
                 </div>
+				<div class="box-content">
+					<a id="xboxfirst" class="xbox" href="img/xboxone/Purchase.png" 
+						title="Layout for the Purchase page on the Xbox One console. This flow is also optimized for Xbox.com and the Windows 8 desktop.">Photo</a>
+					<a class="xbox" href="img/xboxone/Purchase-ChangePi.png" 
+						title="When a user wants to change their payment instrument, a subflow is loaded in an iframe.">Photo</a>
+					<a class="xbox" href="img/xboxone/Purchase-NuiVui.png" 
+						title="This shows support for VUI (voice control) and NUI (motion control).">Photo</a>
+					<a class="xbox" href="img/xboxone/PaymentAndBilling.png" 
+						title="The Xbox One settings page for managing payment options.">Photo</a>
+					<a id="xboxfirst" class="xbox" href="img/xboxone/AddPI.png" 
+						title="The first of several subviews that allow the user to add a new payment instrument.">Photo</a>
+					<a class="xbox" href="img/xboxone/Legal.png" 
+						title="A subview for viewing the legal terms and conditions upon account creation.">Photo</a>
+						
+					<a id="adminfirst" class="admindash" href="img/meteor/admintools-cal.png" 
+						title="A dashboard for administrators of multiple campaigns, designed to allow large amounts of data to be fetched as easily and quickly as possible.">Photo</a>
+					<a class="admindash" href="img/meteor/admintools-fetch.png" 
+						title="Multiple organizations can be specified via the Organization and ID # searches.">Photo</a>		
+					<a class="admindash" href="img/meteor/admintools-results.png" 
+						title="All results are summed up, with values displayed in the Totals table.">Photo</a>
+					<a class="admindash" href="img/meteor/admintools-search.png" 
+						title="Users can search through multiple criteria, including a free text search of campaign names.">Photo</a>
+					
+					<a id="likefirst" class="liketool" href="img/meteor/liketool-fb.jpg" 
+						title="The WYSIWYG config page for Meteor's streamlined sharing tool. I coded both the tool itself, which serves as an implementation for Meteor tracking via common share widgets, and the config page.">Photo</a>
+					<a class="liketool" href="img/meteor/liketool-google.jpg" 
+						title="Widgets were chosen based on user request and usage statistics.">Photo</a>
+					<a class="liketool" href="img/meteor/liketool-pinterest.jpg" 
+						title="Pinterest was added due to user requet. Although it has no public API, I was able to reverse-engineer their widget for use in the tool.">Photo</a>
+					<a class="liketool" href="img/meteor/liketool-twitter.jpg" 
+						title="Common features can be changed via this config page. Other features were implimented and can be changed via JavaScript.">Photo</a>
+					<a class="liketool" href="img/meteor/liketool-save.jpg" 
+						title="A notification informs the user of a successful save.">Photo</a>
+					<a class="liketool" href="img/meteor/liketool-doc.jpg" 
+						title="Documentation of the tool was provided for advanced users who do not want to use the config page.">Photo</a>
+							
+					<a id="dashfirst" class="dash" href="img/meteor/dash-overview.jpg"
+						title="The main overview page for meteor campaign. Care was taken to display the multitde of data in a readable manner.">Photo</a>
+					<a class="dash" href="img/meteor/dash-overviewload.jpg" 
+						title="Because the data retrieval can take several seconds, I included a loading message to reassure users.">Photo</a>
+					<a class="dash" href="img/meteor/dash-error.jpg" 
+						title="Because direct CSV fetching does not take as long, on error, a link is provided to download the data directly.">Photo</a>
+					<a class="dash" href="img/meteor/dash-conversions.jpg" 
+						title="Another data-rich page. Again, care is taken to display the data in a readable manner.">Photo</a>
+					<a class="dash" href="img/meteor/dash-sorted.jpg" 
+						title="Individual data tables include pagination and sorting by most columns.">Photo</a>			
+				</div>
             </div>
         </div>
     </section>
