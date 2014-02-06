@@ -180,8 +180,9 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <form name="contactForm" id="contactForm" action="contact_form.php" method="post">
-                <div class="col">
+			<form name="contactForm" id="contactForm" action="javascript:void(0)" method="post">
+                <h3 id="resultMessage"></h3>
+				<div class="col">
                     <div class="textfield">
                         <label for="name">Name</label>
                         <input name="name" id="name" type="text" required/>
@@ -205,13 +206,13 @@
                         <textarea name="message" id="message" rows="6" cols="60"></textarea>
                     </div>
                     <div>
-                        <button id="submit" type="submit" name="submit">Send Message</button>
+                        <button id="submit" type="submit" name="submit" value="submit">Send Message</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
-    <footer id="footer">
+	<footer id="footer">
         <div class="container">
             <div id="copyright">&copy; 2014 Jessica Billings &bull; All rights reserved.</div>
             <ul id="social">
@@ -225,5 +226,16 @@
             </ul>
         </div>
     </footer>
+	<script>
+	$("#contactForm").submit(function() {
+		$("#resultMessage").empty();
+		var data = $(this).serialize();
+		console.log('data: ' + data)
+		$.post("contact_form.php", data, function(result) {
+			$("#resultMessage").html(result);
+			console.log('DONE');
+		});
+	});
+	</script>
 </body>
 </html>

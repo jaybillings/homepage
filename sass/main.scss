@@ -252,7 +252,13 @@ blockquote {
 	.textfield, .textarea {
 		padding: 0 0 20px;
 	}
+	#resultMessage p {
+		color: $pink;
+		margin-left: 10px;
+		font-size: 1em;
+	}
 	#contactForm label {
+		font-size: 1.5em;
 		cursor: pointer;
 		display: block;
 	}

@@ -485,11 +485,18 @@ blockquote cite:before {
   padding: 0 0 20px;
 }
 /* line 255, ../sass/main.scss */
+#contact #resultMessage p {
+  color: #f14b51;
+  margin-left: 10px;
+  font-size: 1em;
+}
+/* line 260, ../sass/main.scss */
 #contact #contactForm label {
+  font-size: 1.5em;
   cursor: pointer;
   display: block;
 }
-/* line 259, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 #contact textarea, #contact input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -509,21 +516,21 @@ blockquote cite:before {
   border-radius: 4px;
   outline: none;
 }
-/* line 277, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 #contact textarea:focus, #contact input:focus {
   box-shadow: none;
   border: 1px solid #f14b51;
 }
-/* line 282, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 #contact textarea {
   height: 183px;
 }
-/* line 285, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 #contact input {
   margin: 0 0 10px;
   height: 40px;
 }
-/* line 289, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 #contact #submit {
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -546,26 +553,26 @@ blockquote cite:before {
   -o-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
-/* line 310, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 #contact #submit:hover {
   background: #f36368;
 }
 
-/* line 317, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 #footer #copyright {
   float: left;
   font-size: 1.25em;
   line-height: 60px;
 }
-/* line 322, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 #footer #social {
   float: right;
 }
-/* line 324, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 #footer #social li {
   float: left;
 }
-/* line 326, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 #footer #social li a {
   display: block;
   height: 60px;
@@ -577,60 +584,60 @@ blockquote cite:before {
   -o-transition: background-position 0.5s ease;
   transition: background-position 0.5s ease;
 }
-/* line 336, ../sass/main.scss */
+/* line 342, ../sass/main.scss */
 #footer #social li a:hover {
   background-position-y: -60px;
 }
-/* line 341, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 #footer #social .behance {
   background-color: #0686f1;
   background-position: 0 0;
 }
-/* line 345, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 #footer #social .dribbble {
   background-color: #d8457d;
   background-position: -60px 0;
 }
-/* line 349, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 #footer #social .facebook {
   background-color: #07549f;
   background-position: -120px 0;
 }
-/* line 353, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 #footer #social .github {
   background-color: #bbbbbb;
   background-position: -180px 0;
 }
-/* line 357, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 #footer #social .googleplus {
   background-color: #272727;
   background-position: -240px 0;
 }
-/* line 361, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 #footer #social .linkedin {
   background-color: #017eb4;
   background-position: -300px 0;
 }
-/* line 365, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 #footer #social .twitter {
   background-color: #29a9e1;
   background-position: -360px 0;
 }
 
 /* Colorbox alterations */
-/* line 373, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 #cboxTitle {
   margin-bottom: 30px !important;
 }
 
 /* Large Desktop */
 @media (min-width: 980px) {
-  /* line 379, ../sass/main.scss */
+  /* line 385, ../sass/main.scss */
   .container {
     width: 940px;
   }
 
-  /* line 382, ../sass/main.scss */
+  /* line 388, ../sass/main.scss */
   .container.inner {
     text-align: center;
     overflow: hidden;
@@ -638,47 +645,47 @@ blockquote cite:before {
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 390, ../sass/main.scss */
+  /* line 396, ../sass/main.scss */
   .container {
     width: 96%;
     margin: 0 auto;
   }
 
-  /* line 394, ../sass/main.scss */
+  /* line 400, ../sass/main.scss */
   .container.inner {
     width: 705px;
   }
 
-  /* line 397, ../sass/main.scss */
+  /* line 403, ../sass/main.scss */
   #contact textarea {
     height: 179px;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 404, ../sass/main.scss */
+  /* line 410, ../sass/main.scss */
   .container {
     width: 96%;
     margin: 0 auto;
   }
 
-  /* line 408, ../sass/main.scss */
+  /* line 414, ../sass/main.scss */
   .container.inner {
     width: 470px;
   }
 
-  /* line 411, ../sass/main.scss */
+  /* line 417, ../sass/main.scss */
   #footer #copyright {
     float: none;
     text-align: center;
   }
 
-  /* line 415, ../sass/main.scss */
+  /* line 421, ../sass/main.scss */
   #social {
     display: none;
   }
 
-  /* line 418, ../sass/main.scss */
+  /* line 424, ../sass/main.scss */
   #contact .col {
     width: 100%;
     margin: 0 auto;
@@ -686,18 +693,18 @@ blockquote cite:before {
 }
 /* Landscape phones and down */
 @media (max-width: 500px) {
-  /* line 426, ../sass/main.scss */
+  /* line 432, ../sass/main.scss */
   .container {
     width: auto;
     margin: 0 10px;
   }
 
-  /* line 430, ../sass/main.scss */
+  /* line 436, ../sass/main.scss */
   .container.inner {
     width: auto;
   }
 
-  /* line 433, ../sass/main.scss */
+  /* line 439, ../sass/main.scss */
   .col {
     float: none;
     margin: 25px auto 50px;

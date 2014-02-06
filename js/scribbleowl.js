@@ -1,5 +1,6 @@
 (function(window, document, $, undefined) {
 	$(function() {
+		/* Expertise dial */
 		var dialParams = {
 			'min': 0,
 			'max': 100,
@@ -11,7 +12,7 @@
 			$(this).knob(dialParams);
 		});
 		
-		/* Colorbox */
+		/* Portfolio colorbox */
 		$(".admindash").colorbox({rel: "admindash", scalePhotos: 'true', maxWidth: '80%'});
 		$(".xbox").colorbox({rel: "xbox", scalePhotos: 'true', maxWidth: '80%'});
 		$(".dash").colorbox({rel: "dash", scalePhotos: 'true', maxWidth: '80%'});
@@ -28,6 +29,17 @@
 		});
 		$("#liketool-link").click(function() {
 			$("#likefirst").click();
+		});
+		
+		/* Contact form */
+		$("#contactForm").submit(function() {
+			$("#resultMessage").empty();
+			var data = $(this).serialize();
+			console.log('data: ' + data)
+			$.post("contact_form.php", data, function(result) {
+				$("#resultMessage").html(result);
+				console.log('DONE');
+			});
 		});
 	});
 })(window, document, jQuery);
