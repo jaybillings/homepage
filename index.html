@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ScribbleOwl</title>
+    <title>Jay Billings</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -22,11 +22,10 @@
 <body>
     <header>
         <section id="masthead">
-                
         </section>
         <section id="navigation">
             <div class="container">
-                <h1><a href="#">ScribbleOwl.</a></h1>
+                <h1><a href="#">Jay Billings.</a></h1>
                 <nav>
                     <ul>
                         <li><a href="#masthead" class="current">Home</a></li>
@@ -43,8 +42,8 @@
     <section id="welcome">
         <div class="container">
             <h2>Welcome</h2>
-            <p>I'm Jessica (Jay) Billings, a software designer and developer for the web. I specialize in creating clean, highly usable interfaces for web applications, but have the skills for all your development needs.</p>
-            <p>I've been in the industry for 5 years and have already worked with such large name companies as Microsoft, MTV, and AT&amp;T.</p>
+            <p>I'm Jay Billings, a designer and engineer for the web. I specialize in creating clean, maintainable, user-friendly web applications, but have the skills for all your development needs.</p>
+            <p>I've been in the industry for 6 years and have workde with a wide range of companies, from international giants like Microsoft to local start-ups.</p>
         </div>
     </section>
     <section id="expertise">
@@ -52,20 +51,28 @@
             <h2>Expertise</h2>
             <div class="container inner">
                 <div class="col">
-					<input type="text" id="dial_css" class="dial" value="80">
-                    <p>CSS/CSS3</p>
-                </div>
-                <div class="col">
-					<input type="text" id="dial_html" class="dial" value="99">
-                    <p>HTML/HTML5</p>
-                </div>
-                <div class="col">
-					<input type="text" id="dial_js" class="dial" value="85">
+					<input type="text" id="dial_js" class="dial" value="95"/>
                     <p>JavaScript</p>
                 </div>
                 <div class="col">
-					<input type="text" id="dial_py" class="dial" value="70">
+					<input type="text" id="dial_css" class="dial" value="90"/>
+                    <p>CSS/CSS3</p>
+                </div>
+                <div class="col">
+					<input type="text" id="dial_html" class="dial" value="99"/>
+                    <p>HTML/HTML5</p>
+                </div>
+                <div class="col">
+                    <input type="text" id="dial_mobile" class="dial" value="75" />
+                    <p>Responsive design</p>
+                </div>
+                <div class="col">
+					<input type="text" id="dial_py" class="dial" value="60"/>
                     <p>Python</p>
+                </div>
+                <div class="col">
+                    <input type="text" id="dial_net" class="dial" value="50"/>
+                    <p>MVC .NET</p>
                 </div>
             </div>
         </div>
@@ -87,6 +94,18 @@
         <div class="container">
             <h2>Portfolio</h2>
             <div class="container inner">
+                <div class="col">
+                    <img src="img/cheez-pre.png" />
+                    <div class="hover">
+                        <div class="hoverInner">
+                            <h3>Cheezburger TV</h3>
+                            <p>A single-page app for Cheezburger</p>
+                            <a id="video-link" href="http://icanhas.cheezburger.com/video" target="_blank">
+                                <div class="cta">View</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col">
                     <img src="img/xbox-pre.png" />
                     <div class="hover">
@@ -214,28 +233,17 @@
     </section>
 	<footer id="footer">
         <div class="container">
-            <div id="copyright">&copy; 2014 Jessica Billings &bull; All rights reserved.</div>
+            <div id="copyright">&copy; 2015 Jay Billings &bull; All rights reserved.</div>
             <ul id="social">
                 <!--li><a href="#" class="behance">Behance</a></li-->
                 <!--<li><a href="#" class="dribbble">Dribbble</a></li>-->
                 <!--<li><a href="#" class="facebook">Facebook</a></li>-->
                 <li><a href="http://github.com/jcbbillings/" class="github">GitHub</a></li>
                 <!--<li><a href="#" class="googleplus">Google+</a></li>-->
-                <li><a href="http://www.linkedin.com/pub/jessica-billings/8/130/223/" class="linkedin">LinkedIn</a></li>
+                <li><a href="http://www.linkedin.com/in/jaybillings" class="linkedin">LinkedIn</a></li>
                 <li><a href="http://twitter.com/slaveofosiris" class="twitter">Twitter</a></li>
             </ul>
         </div>
     </footer>
-	<script>
-	$("#contactForm").submit(function() {
-		$("#resultMessage").empty();
-		var data = $(this).serialize();
-		console.log('data: ' + data)
-		$.post("contact_form.php", data, function(result) {
-			$("#resultMessage").html(result);
-			console.log('DONE');
-		});
-	});
-	</script>
 </body>
 </html>

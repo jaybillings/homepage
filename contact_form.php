@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 $from = "From: $name";
 $to = "contact@scribbleowl.com";
-$subject = "Hello from $name";
+$subject = "Information Request from $name";
 $human = strtolower($_POST['human']);
 
 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
