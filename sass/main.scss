@@ -2,6 +2,8 @@
 @import "colors.scss";
 @import "fonts.scss";
 @import "grid.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
 
 /* IMAGES */
 img, canvas {
@@ -14,6 +16,7 @@ img, canvas {
 canvas {
 	border: 1px dotted;
 }
+
 
 /* LINKS */
 a {

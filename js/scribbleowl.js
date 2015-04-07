@@ -11,7 +11,17 @@
 		$(".dial").each(function (i) {
 			$(this).knob(dialParams);
 		});
-		
+
+        /* Testimonials carousel */
+        $('.carousel').slick({
+            dots: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+
 		/* Portfolio colorbox */
 		$(".admindash").colorbox({rel: "admindash", scalePhotos: 'true', maxWidth: '80%'});
 		$(".xbox").colorbox({rel: "xbox", scalePhotos: 'true', maxWidth: '80%'});
