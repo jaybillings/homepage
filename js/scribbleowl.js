@@ -13,13 +13,10 @@
 		});
 
         /* Testimonials carousel */
-        $('.carousel').slick({
+        $('.carousel').unslider({
+            fluid: false,
             dots: true,
-            arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
+            speed: 500
         });
 
 		/* Portfolio colorbox */

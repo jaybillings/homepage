@@ -2,8 +2,6 @@
 @import "colors.scss";
 @import "fonts.scss";
 @import "grid.scss";
-@import "slick.scss";
-@import "slick-theme.scss";
 
 /* IMAGES */
 img, canvas {
@@ -54,6 +52,7 @@ blockquote {
 		content: "\201C";
 		font: 3.25em Georgia, serif;
 		color: $pink;
+        z-index: 100;
 	}
 	& cite {
 		display: block;
@@ -139,37 +138,45 @@ blockquote {
 
 #testimonials {
 	background: url(../img/testimonials.png);
-	ol {
-		margin: 20px 0 0;
-		text-align: center;
-	}
-	li {
-		margin: 0 5px;
-		display: inline-block;
-		a {
-			width: 10px;
-			height: 10px;
-			display: block;
-			background: $grey;
-			text-indent: -9999px;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			-ms-border-radius: 50%;
-			-o-border-radius: 50%;
-			border-radius: 50%;
-			-webitkit-transition: background-color 0.5s ease;
-			-moz-transition: background-color 0.5s ease;
-			-o-transition: background-color 0.5s ease;
-			transition: background-color 0.5s ease;
-			&:hover {
-				background-color: lighten($grey, 15%);
-			}
-			&.active {
-				background-color: $pink;
-			}
-		}
-	}
-	
+    .carousel {
+        height: 420px !important;
+        position: relative;
+        overflow: auto;
+
+        li { list-style: none; }
+
+        ul li {
+            float: left;
+            padding-top: 5px;
+        }
+
+        .dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            li {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 0 4px;
+                text-indent: -999em;
+                border: 2px solid $pink;
+                border-radius: 6px;
+                cursor: pointer;
+                opacity: .4;
+                /* Transitions */
+                transition: background .5s, opacity .5s;
+                -webkit-transition: background .5s, opacity .5s;
+                -moz-transition: background .5s, opacity .5s;
+                &.active {
+                    opacity: 1;
+                    background-color: lighten(pink, 5%);
+                }
+            }
+        }
+    }
 }
 
 #portfolio {
