@@ -252,11 +252,13 @@ blockquote {
   background: white;
   padding: 5em 0; }
   #welcome p {
-    text-align: center; }
-  #welcome .about-pic {
+    text-align: left; }
+  #welcome img {
     float: left;
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 15em;
+    margin-right: 2em;
+    border: 4px solid #40363a;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;

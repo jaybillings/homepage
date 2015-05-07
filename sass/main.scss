@@ -115,12 +115,15 @@ blockquote {
     background: $white;
 	padding: 5em 0;
 	p {
-		text-align: center;
+		text-align: left;
 	}
-    .about-pic {
+    img {
+
         float: left;
-        width: 10em;
-        height: 10em;
+        width: 15em;
+        height: 15em;
+        margin-right: 2em;
+        border: 4px solid #40363a;
         @include border-radius(50%);
     }
 }
