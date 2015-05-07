@@ -1,7 +1,9 @@
-@import "reset.scss";
-@import "colors.scss";
-@import "fonts.scss";
-@import "grid.scss";
+@import "reset";
+@import "mixins";
+@import "colors";
+@import "fonts";
+@import "grid";
+@import "tooltips";
 
 /* IMAGES */
 img, canvas {
@@ -19,10 +21,7 @@ canvas {
 /* LINKS */
 a {
 	color: $pink;
-	-webitkit-transition: color 0.5s ease;
-	-moz-transition: color 0.5s ease;
-	-o-transition: color 0.5s ease;
-	transition: color 0.5s ease;
+    @include transition(color 0.5s ease);
 	text-decoration: none;
 	&:hover {
 		color: darken($pink, 20%);
@@ -67,20 +66,20 @@ blockquote {
 
 /* MAIN LAYOUT */
 #masthead {
-	background: url(../img/scribbleowl-full.jpg) 0 50%;
+	background: url(../img/header-full.png) 0 0;
 	background-size: cover;
 	height: 22.5em;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 481px) {
 	#masthead {
-		background-image: url(../img/scribbleowl-medium.jpg);
+		background-image: url(../img/header-medium.png);
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	#masthead {
-		background-image: url(../img/scribbleowl-small.jpg);
+		background-image: url(../img/header-small.png);
 	}
 }
 
@@ -99,15 +98,8 @@ blockquote {
 				padding: 0.25em 0.5em;
 				color: #fff;
 				text-decoration: none;
-				-webkit-border-radius: 50px;
-				-moz-border-radius: 50px;
-				-ms-border-radius: 50px;
-				-o-border-radius: 50px;
-				border-radius: 50px;
-				-webitkit-transition-property: background-color;
-				-moz-transition-property: background-color;
-				-o-transition-property: background-color;
-				transition-property: background-color;
+                @include border-radius(50px);
+                @include transition(background-color);
 				&:hover {
 					background: rgba($pink, 0.25);
 				}
@@ -120,10 +112,17 @@ blockquote {
 }
 
 #welcome {
+    background: $white;
 	padding: 5em 0;
 	p {
 		text-align: center;
 	}
+    .about-pic {
+        float: left;
+        width: 10em;
+        height: 10em;
+        @include border-radius(50%);
+    }
 }
 
 #expertise {
@@ -134,6 +133,23 @@ blockquote {
 	canvas {
 		border: none;
 	}
+    .col {
+        cursor: help;
+    }
+    div[data-tooltip] {
+        &.ne {
+            @include tooltip(ne, #eee);
+        }
+        &.nw {
+            @include tooltip(nw, #eee);
+        }
+        &.se {
+            @include tooltip(se, #eee);
+        }
+        &.sw {
+            @include tooltip(sw, #eee);
+        }
+    }
 }
 
 #testimonials {
@@ -163,13 +179,10 @@ blockquote {
                 margin: 0 4px;
                 text-indent: -999em;
                 border: 2px solid $pink;
-                border-radius: 6px;
+                @include border-radius(6px);
                 cursor: pointer;
                 opacity: .4;
-                /* Transitions */
-                transition: background .5s, opacity .5s;
-                -webkit-transition: background .5s, opacity .5s;
-                -moz-transition: background .5s, opacity .5s;
+                @include transition(background .5s, opacity .5s);
                 &.active {
                     opacity: 1;
                     background-color: lighten(pink, 5%);
@@ -182,11 +195,7 @@ blockquote {
 #portfolio {
 	background: $greenLight;
 	img {
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-ms-border-radius: 50%;
-		-o-border-radius: 50%;
-		border-radius: 50%;
+        @include border-radius(50%);
 	}
 	.hover {
 		position: absolute;
@@ -197,11 +206,7 @@ blockquote {
 		height: 0;
 		opacity: 0;
 		background: $pink;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		-ms-border-radius: 50%;
-		-o-border-radius: 50%;
-		border-radius: 50%;
+        @include border-radius(50%);
 		z-index: 10;
 	}
 	.col:hover .hover {
@@ -218,20 +223,13 @@ blockquote {
 	.col:hover .hoverInner {
 		height: 100%;
 		opacity: 1;
-		-webitkit-transition: all 500ms ease-in-out 0s;
-		-moz-transition: all 500ms ease-in-out 0s;
-		-o-transition: all 500ms ease-in-out 0s;
-		transition: all 500ms ease-in-out 0s;
+        @include transition(all 500ms ease-in-out 0s);
 		top: 0;
 	}
 	.cta {
 		cursor: pointer;
 		background: $brown;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
-		border-radius: 10px;
+        @include border-radius(10px);
 		font-size: 14px;
 		line-height: 34px;
 		color: white;
@@ -283,11 +281,7 @@ blockquote {
 		background: $white;
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
 		border: 1px solid $grey;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-ms-border-radius: 4px;
-		-o-border-radius: 4px;
-		border-radius: 4px;
+        @include border-radius(4px);
 		outline: none;
 		&:focus {
 			box-shadow: none;
@@ -312,16 +306,9 @@ blockquote {
 		background: $pink;
 		border-width: 1px;
 		border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-ms-border-radius: 4px;
-		-o-border-radius: 4px;
-		border-radius: 4px;
-		height: 40px; 
-		-webitkit-transition: background-color 0.5s ease;
-		-moz-transition: background-color 0.5s ease;
-		-o-transition: background-color 0.5s ease;
-		transition: background-color 0.5s ease;
+        @include border-radius(4px);
+		height: 40px;
+        @include transition(background-color 0.5s ease);
 		&:hover {
 			background: lighten($pink, 5%);
 		}
@@ -344,10 +331,7 @@ blockquote {
 				width: 60px;
 				background: url(../img/sprite.png) 0 0 no-repeat;
 				text-indent: -9999px;
-				-webitkit-transition: background-position 0.5s ease;
-				-moz-transition: background-position 0.5s ease;
-				-o-transition: background-position 0.5s ease;
-				transition: background-position 0.5s ease;
+                @include transition(background-position 0.5s ease);
 				&:hover {
 					background-position-y: -60px;
 				}
@@ -424,7 +408,7 @@ blockquote {
 		width: 470px;
 	}
 	#footer #copyright {
-	float: none;
+	    float: none;
 		text-align: center;
 	}
 	#social {

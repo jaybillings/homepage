@@ -1,77 +1,57 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400,700");
-/* line 1, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 10, ../sass/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
-/* line 14, ../sass/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 18, ../sass/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 22, ../sass/_reset.scss */
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 26, ../sass/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 31, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 4, ../sass/_fonts.scss */
+/* Border-radius */
+/* Transitions */
+/* Transform */
 body {
   font: 100%/1.5 'Open Sans', verdana, arial, helvetica, sans-serif;
-  color: #40363a;
-}
+  color: #40363a; }
 
-/* line 9, ../sass/_fonts.scss */
 p {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
-  margin: 0 0 0.5em;
-}
-/* line 14, ../sass/_fonts.scss */
-#portfolio p {
-  font-size: 14px;
-  line-height: 18px;
-  color: white;
-  padding: 0 10px;
-  margin: 0 0 15px;
-}
+  margin: 0 0 0.5em; }
+  #portfolio p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    padding: 0 10px;
+    margin: 0 0 15px; }
 
-/* line 23, ../sass/_fonts.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', 'Trebuchet MS', verdana, arial, helvetica, helve, sans-serif;
   font-weight: 300;
   line-height: 1em;
-  margin: 0 0 1em;
-}
+  margin: 0 0 1em; }
 
-/* line 30, ../sass/_fonts.scss */
 h1 {
   display: inline;
   float: left;
@@ -79,159 +59,129 @@ h1 {
   font-size: 2.5em;
   font-weight: 700;
   line-height: 2em;
-  text-transform: uppercase;
-}
-/* line 38, ../sass/_fonts.scss */
-h1 a, h1 a:hover {
-  color: white;
-}
+  text-transform: uppercase; }
+  h1 a, h1 a:hover {
+    color: white; }
 
-/* line 43, ../sass/_fonts.scss */
 h2 {
-  font-size: 2.25em;
-}
-/* line 45, ../sass/_fonts.scss */
-#welcome h2 {
-  font-size: 6em;
-  text-align: center;
-  margin-bottom: 0.25em;
-}
+  font-size: 2.25em; }
+  #welcome h2 {
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 0.25em; }
 
-/* line 52, ../sass/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: 400;
   margin: 35px 0 20px;
-  color: white;
-}
+  color: white; }
 
-/* line 59, ../sass/_fonts.scss */
 label {
   font-size: 1.25em;
   line-height: 1.5em;
-  color: white;
-}
+  color: white; }
 
-/* line 65, ../sass/_fonts.scss */
 textarea, input[type='text'], input[type='email'], input {
   font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #999999;
-}
+  color: #999999; }
 
-/* line 72, ../sass/_fonts.scss */
 #submit {
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  color: white;
-}
+  color: white; }
 
 /* Large desktop */
 @media (min-width: 980px) {
-  /* line 81, ../sass/_fonts.scss */
   body {
     font-size: 100%;
-    line-height: 100%;
-  }
-}
+    line-height: 100%; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 89, ../sass/_fonts.scss */
   body {
     font-size: 90%;
-    line-height: 80%;
-  }
-}
+    line-height: 80%; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 97, ../sass/_fonts.scss */
   body {
-    font-size: 80%;
-  }
-}
+    font-size: 80%; } }
 /* Landscape phones and down */
 @media (max-width: 500px) {
-  /* line 104, ../sass/_fonts.scss */
   body {
     font-size: 80%;
-    line-height: 50%;
-  }
-}
-/* line 1, ../sass/_grid.scss */
+    line-height: 50%; } }
 .container {
   padding: 0;
   margin: 0 auto;
   zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-}
+  /* For IE 6/7 (trigger hasLayout) */ }
 
-/* line 7, ../sass/_grid.scss */
 .container:before, .container:after {
   content: "";
   display: table;
-  line-height: 0;
-}
+  line-height: 0; }
 
-/* line 13, ../sass/_grid.scss */
 .container:after {
-  clear: both;
-}
+  clear: both; }
 
-/* line 17, ../sass/_grid.scss */
 section {
-  padding: 2.5em 0;
-}
+  padding: 2.5em 0; }
 
-/* line 21, ../sass/_grid.scss */
 .col {
   display: inline-block;
   position: relative;
   width: 185px;
-  margin: 20px 25px;
-}
+  margin: 20px 25px; }
 
+/*
+* SCSS Tooltips
+* By David Tintner & Hacking UI
+* http://hackingui.com/front-end/scss-tooltips/
+*
+* $direction: ne, nw, se, sw. relative to the element the tooltip is on
+* $bg-color: any CSS valid color string, will be applied as bg color of tooltip
+* Content for tooltip comes from data-tooltip attribute on element
+*/
+/*
+* Triangle
+* not necessary if you're already using UtilityBelt- https://github.com/dmtintner/UtilityBelt
+*/
+/*
+* respondTo
+* not necessary if you're already using UtilityBelt- https://github.com/dmtintner/UtilityBelt
+*/
+/*
+* Where the magic happens
+*/
 /* IMAGES */
-/* line 7, ../sass/main.scss */
 img, canvas {
   border: 0;
   max-width: 100%;
   height: auto;
   width: auto\9;
-  /* ie8 */
-}
+  /* ie8 */ }
 
-/* line 14, ../sass/main.scss */
 canvas {
-  border: 1px dotted;
-}
+  border: 1px dotted; }
 
 /* LINKS */
-/* line 20, ../sass/main.scss */
 a {
   color: #f14b51;
   -webitkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
-  text-decoration: none;
-}
-/* line 27, ../sass/main.scss */
-a:hover {
-  color: #c70f16;
-}
-/* line 30, ../sass/main.scss */
-a:focus {
-  outline: thin dotted;
-}
-/* line 33, ../sass/main.scss */
-a a:hover, a a:active {
-  outline: 0;
-}
+  text-decoration: none; }
+  a:hover {
+    color: #c70f16; }
+  a:focus {
+    outline: thin dotted; }
+  a a:hover, a a:active {
+    outline: 0; }
 
 /* BLOCKQUOTES */
-/* line 39, ../sass/main.scss */
 blockquote {
   position: relative;
   width: 90%;
@@ -239,482 +189,605 @@ blockquote {
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1.5em;
-  text-align: center;
-}
-/* line 47, ../sass/main.scss */
-blockquote:before {
-  display: block;
-  position: absolute;
-  top: -0.25em;
-  left: -.35em;
-  content: "\201C";
-  font: 3.25em Georgia, serif;
-  color: #f14b51;
-  z-index: 100;
-}
-/* line 57, ../sass/main.scss */
-blockquote cite {
-  display: block;
-  margin-top: 1em;
-  color: #f14b51;
-}
-/* line 61, ../sass/main.scss */
-blockquote cite:before {
-  color: #f14b51;
-  content: "\2013 \2009";
-}
+  text-align: center; }
+  blockquote:before {
+    display: block;
+    position: absolute;
+    top: -0.25em;
+    left: -.35em;
+    content: "\201C";
+    font: 3.25em Georgia, serif;
+    color: #f14b51;
+    z-index: 100; }
+  blockquote cite {
+    display: block;
+    margin-top: 1em;
+    color: #f14b51; }
+    blockquote cite:before {
+      color: #f14b51;
+      content: "\2013 \2009"; }
 
 /* MAIN LAYOUT */
-/* line 69, ../sass/main.scss */
 #masthead {
-  background: url(../img/scribbleowl-full.jpg) 0 50%;
+  background: url(../img/header-full.png) 0 0;
   background-size: cover;
-  height: 22.5em;
-}
+  height: 22.5em; }
 
 @media only screen and (max-width: 1024px) and (min-width: 481px) {
-  /* line 76, ../sass/main.scss */
   #masthead {
-    background-image: url(../img/scribbleowl-medium.jpg);
-  }
-}
+    background-image: url(../img/header-medium.png); } }
 @media only screen and (max-width: 480px) {
-  /* line 82, ../sass/main.scss */
   #masthead {
-    background-image: url(../img/scribbleowl-small.jpg);
-  }
-}
-/* line 87, ../sass/main.scss */
+    background-image: url(../img/header-small.png); } }
 #navigation {
   background: #40363a;
-  padding: 0;
-}
-/* line 90, ../sass/main.scss */
-#navigation nav {
-  float: right;
-}
-/* line 92, ../sass/main.scss */
-#navigation nav li {
-  display: block;
-  float: left;
-  font-size: 1.125em;
-  line-height: 4.4em;
-  margin-left: 0.25em;
-}
-/* line 98, ../sass/main.scss */
-#navigation nav li a {
-  padding: 0.25em 0.5em;
-  color: #fff;
-  text-decoration: none;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  -webitkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-}
-/* line 111, ../sass/main.scss */
-#navigation nav li a:hover {
-  background: rgba(241, 75, 81, 0.25);
-}
-/* line 114, ../sass/main.scss */
-#navigation nav li a.current {
-  background: #f14b51;
-}
+  padding: 0; }
+  #navigation nav {
+    float: right; }
+    #navigation nav li {
+      display: block;
+      float: left;
+      font-size: 1.125em;
+      line-height: 4.4em;
+      margin-left: 0.25em; }
+      #navigation nav li a {
+        padding: 0.25em 0.5em;
+        color: #fff;
+        text-decoration: none;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        border-radius: 50px;
+        -webitkit-transition: background-color;
+        -moz-transition: background-color;
+        -o-transition: background-color;
+        transition: background-color; }
+        #navigation nav li a:hover {
+          background: rgba(241, 75, 81, 0.25); }
+        #navigation nav li a.current {
+          background: #f14b51; }
 
-/* line 122, ../sass/main.scss */
 #welcome {
-  padding: 5em 0;
-}
-/* line 124, ../sass/main.scss */
-#welcome p {
-  text-align: center;
-}
-
-/* line 129, ../sass/main.scss */
-#expertise {
-  background: #a3d9ac;
-}
-/* line 131, ../sass/main.scss */
-#expertise p {
-  text-align: center;
-}
-/* line 134, ../sass/main.scss */
-#expertise canvas {
-  border: none;
-}
-
-/* line 139, ../sass/main.scss */
-#testimonials {
-  background: url(../img/testimonials.png);
-}
-/* line 141, ../sass/main.scss */
-#testimonials .carousel {
-  height: 420px !important;
-  position: relative;
-  overflow: auto;
-}
-/* line 146, ../sass/main.scss */
-#testimonials .carousel li {
-  list-style: none;
-}
-/* line 148, ../sass/main.scss */
-#testimonials .carousel ul li {
-  float: left;
-  padding-top: 5px;
-}
-/* line 153, ../sass/main.scss */
-#testimonials .carousel .dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-}
-/* line 159, ../sass/main.scss */
-#testimonials .carousel .dots li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 4px;
-  text-indent: -999em;
-  border: 2px solid #f14b51;
-  border-radius: 6px;
-  cursor: pointer;
-  opacity: .4;
-  /* Transitions */
-  transition: background .5s, opacity .5s;
-  -webkit-transition: background .5s, opacity .5s;
-  -moz-transition: background .5s, opacity .5s;
-}
-/* line 173, ../sass/main.scss */
-#testimonials .carousel .dots li.active {
-  opacity: 1;
-  background-color: #ffdae0;
-}
-
-/* line 182, ../sass/main.scss */
-#portfolio {
-  background: #d3ffc4;
-}
-/* line 184, ../sass/main.scss */
-#portfolio img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-/* line 191, ../sass/main.scss */
-#portfolio .hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  height: 0;
-  opacity: 0;
-  background: #f14b51;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  z-index: 10;
-}
-/* line 207, ../sass/main.scss */
-#portfolio .col:hover .hover {
-  height: 100%;
-  opacity: 1;
-}
-/* line 211, ../sass/main.scss */
-#portfolio .hoverInner {
-  position: relative;
-  top: 25px;
-  height: 0;
-  opacity: 0;
-  text-align: center;
-}
-/* line 218, ../sass/main.scss */
-#portfolio .col:hover .hoverInner {
-  height: 100%;
-  opacity: 1;
-  -webitkit-transition: all 500ms ease-in-out 0s;
-  -moz-transition: all 500ms ease-in-out 0s;
-  -o-transition: all 500ms ease-in-out 0s;
-  transition: all 500ms ease-in-out 0s;
-  top: 0;
-}
-/* line 227, ../sass/main.scss */
-#portfolio .cta {
-  cursor: pointer;
-  background: #40363a;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 34px;
-  color: white;
-  width: 85px;
-  margin: 0 auto;
-}
-/* line 240, ../sass/main.scss */
-#portfolio .cta a {
-  color: white;
-}
-/* line 244, ../sass/main.scss */
-#portfolio .box-content {
-  display: none;
-}
-
-/* line 249, ../sass/main.scss */
-#contact {
-  background: #40363a;
-}
-/* line 251, ../sass/main.scss */
-#contact h2, #contact p {
-  color: white;
-}
-/* line 254, ../sass/main.scss */
-#contact .col {
-  width: 48%;
-  margin: 0 1%;
-}
-/* line 257, ../sass/main.scss */
-#contact .col a {
-  color: white;
-}
-/* line 261, ../sass/main.scss */
-#contact .textfield, #contact .textarea {
-  padding: 0 0 20px;
-}
-/* line 264, ../sass/main.scss */
-#contact #resultMessage p {
-  color: #f14b51;
-  margin-left: 10px;
-  font-size: 1em;
-}
-/* line 269, ../sass/main.scss */
-#contact #contactForm label {
-  font-size: 1.5em;
-  cursor: pointer;
-  display: block;
-}
-/* line 274, ../sass/main.scss */
-#contact textarea, #contact input {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  min-height: 40px;
-  width: 100%;
-  padding: 4px 6px;
   background: white;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  border: 1px solid #999999;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  outline: none;
-}
-/* line 292, ../sass/main.scss */
-#contact textarea:focus, #contact input:focus {
-  box-shadow: none;
-  border: 1px solid #f14b51;
-}
-/* line 297, ../sass/main.scss */
-#contact textarea {
-  height: 183px;
-}
-/* line 300, ../sass/main.scss */
-#contact input {
-  margin: 0 0 10px;
-  height: 40px;
-}
-/* line 304, ../sass/main.scss */
-#contact #submit {
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  background: #f14b51;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  height: 40px;
-  -webitkit-transition: background-color 0.5s ease;
-  -moz-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-/* line 325, ../sass/main.scss */
-#contact #submit:hover {
-  background: #f36368;
-}
+  padding: 5em 0; }
+  #welcome p {
+    text-align: center; }
+  #welcome .about-pic {
+    float: left;
+    width: 10em;
+    height: 10em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 
-/* line 332, ../sass/main.scss */
+#expertise {
+  background: #a3d9ac; }
+  #expertise p {
+    text-align: center; }
+  #expertise canvas {
+    border: none; }
+  #expertise .col {
+    cursor: help; }
+  #expertise div[data-tooltip].ne {
+    position: relative; }
+    #expertise div[data-tooltip].ne:before, #expertise div[data-tooltip].ne:after {
+      opacity: 0;
+      z-index: 98;
+      -webitkit-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+      transition: opacity 300ms, visibility 0ms linear 300ms;
+      pointer-events: none; }
+      @media (max-width: 480px) {
+        #expertise div[data-tooltip].ne:before, #expertise div[data-tooltip].ne:after {
+          display: none; } }
+    #expertise div[data-tooltip].ne:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      width: 200px;
+      padding: 10px 15px;
+      line-height: 18px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: normal;
+      white-space: normal;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      background-color: #eee;
+      color: #000; }
+    #expertise div[data-tooltip].ne:after {
+      content: ''; }
+    #expertise div[data-tooltip].ne:before {
+      top: -9px;
+      bottom: auto;
+      -moz-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    #expertise div[data-tooltip].ne:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-top: 6px solid #eee;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: none;
+      top: -9px;
+      bottom: auto; }
+    #expertise div[data-tooltip].ne:before, #expertise div[data-tooltip].ne:after {
+      left: 50%;
+      right: auto;
+      margin-left: -6px; }
+    #expertise div[data-tooltip].ne:before {
+      margin-left: -18px; }
+    #expertise div[data-tooltip].ne:hover {
+      /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+      #expertise div[data-tooltip].ne:hover:before, #expertise div[data-tooltip].ne:hover:after {
+        opacity: 1;
+        pointer-events: all;
+        -moz-transition-delay: 0ms;
+        -o-transition-delay: 0ms;
+        -webkit-transition-delay: 0ms;
+        transition-delay: 0ms; }
+  #expertise div[data-tooltip].nw {
+    position: relative; }
+    #expertise div[data-tooltip].nw:before, #expertise div[data-tooltip].nw:after {
+      opacity: 0;
+      z-index: 98;
+      -webitkit-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+      transition: opacity 300ms, visibility 0ms linear 300ms;
+      pointer-events: none; }
+      @media (max-width: 480px) {
+        #expertise div[data-tooltip].nw:before, #expertise div[data-tooltip].nw:after {
+          display: none; } }
+    #expertise div[data-tooltip].nw:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      width: 200px;
+      padding: 10px 15px;
+      line-height: 18px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: normal;
+      white-space: normal;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      background-color: #eee;
+      color: #000; }
+    #expertise div[data-tooltip].nw:after {
+      content: ''; }
+    #expertise div[data-tooltip].nw:before {
+      top: -9px;
+      bottom: auto;
+      -moz-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    #expertise div[data-tooltip].nw:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-top: 6px solid #eee;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: none;
+      top: -9px;
+      bottom: auto; }
+    #expertise div[data-tooltip].nw:before, #expertise div[data-tooltip].nw:after {
+      right: 50%;
+      left: auto;
+      margin-right: -6px; }
+    #expertise div[data-tooltip].nw:before {
+      margin-right: -18px; }
+    #expertise div[data-tooltip].nw:hover {
+      /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+      #expertise div[data-tooltip].nw:hover:before, #expertise div[data-tooltip].nw:hover:after {
+        opacity: 1;
+        pointer-events: all;
+        -moz-transition-delay: 0ms;
+        -o-transition-delay: 0ms;
+        -webkit-transition-delay: 0ms;
+        transition-delay: 0ms; }
+  #expertise div[data-tooltip].se {
+    position: relative; }
+    #expertise div[data-tooltip].se:before, #expertise div[data-tooltip].se:after {
+      opacity: 0;
+      z-index: 98;
+      -webitkit-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+      transition: opacity 300ms, visibility 0ms linear 300ms;
+      pointer-events: none; }
+      @media (max-width: 480px) {
+        #expertise div[data-tooltip].se:before, #expertise div[data-tooltip].se:after {
+          display: none; } }
+    #expertise div[data-tooltip].se:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      width: 200px;
+      padding: 10px 15px;
+      line-height: 18px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: normal;
+      white-space: normal;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      background-color: #eee;
+      color: #000; }
+    #expertise div[data-tooltip].se:after {
+      content: ''; }
+    #expertise div[data-tooltip].se:before {
+      bottom: -9px;
+      top: auto;
+      -moz-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%); }
+    #expertise div[data-tooltip].se:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-bottom: 6px solid #eee;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: none;
+      bottom: -9px;
+      top: auto; }
+    #expertise div[data-tooltip].se:before, #expertise div[data-tooltip].se:after {
+      left: 50%;
+      right: auto;
+      margin-left: -6px; }
+    #expertise div[data-tooltip].se:before {
+      margin-left: -18px; }
+    #expertise div[data-tooltip].se:hover {
+      /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+      #expertise div[data-tooltip].se:hover:before, #expertise div[data-tooltip].se:hover:after {
+        opacity: 1;
+        pointer-events: all;
+        -moz-transition-delay: 0ms;
+        -o-transition-delay: 0ms;
+        -webkit-transition-delay: 0ms;
+        transition-delay: 0ms; }
+  #expertise div[data-tooltip].sw {
+    position: relative; }
+    #expertise div[data-tooltip].sw:before, #expertise div[data-tooltip].sw:after {
+      opacity: 0;
+      z-index: 98;
+      -webitkit-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+      -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+      transition: opacity 300ms, visibility 0ms linear 300ms;
+      pointer-events: none; }
+      @media (max-width: 480px) {
+        #expertise div[data-tooltip].sw:before, #expertise div[data-tooltip].sw:after {
+          display: none; } }
+    #expertise div[data-tooltip].sw:before {
+      content: attr(data-tooltip);
+      position: absolute;
+      width: 200px;
+      padding: 10px 15px;
+      line-height: 18px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: normal;
+      white-space: normal;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      background-color: #eee;
+      color: #000; }
+    #expertise div[data-tooltip].sw:after {
+      content: ''; }
+    #expertise div[data-tooltip].sw:before {
+      bottom: -9px;
+      top: auto;
+      -moz-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%); }
+    #expertise div[data-tooltip].sw:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-bottom: 6px solid #eee;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: none;
+      bottom: -9px;
+      top: auto; }
+    #expertise div[data-tooltip].sw:before, #expertise div[data-tooltip].sw:after {
+      right: 50%;
+      left: auto;
+      margin-right: -6px; }
+    #expertise div[data-tooltip].sw:before {
+      margin-right: -18px; }
+    #expertise div[data-tooltip].sw:hover {
+      /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+      #expertise div[data-tooltip].sw:hover:before, #expertise div[data-tooltip].sw:hover:after {
+        opacity: 1;
+        pointer-events: all;
+        -moz-transition-delay: 0ms;
+        -o-transition-delay: 0ms;
+        -webkit-transition-delay: 0ms;
+        transition-delay: 0ms; }
+
+#testimonials {
+  background: url(../img/testimonials.png); }
+  #testimonials .carousel {
+    height: 420px !important;
+    position: relative;
+    overflow: auto; }
+    #testimonials .carousel li {
+      list-style: none; }
+    #testimonials .carousel ul li {
+      float: left;
+      padding-top: 5px; }
+    #testimonials .carousel .dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center; }
+      #testimonials .carousel .dots li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        text-indent: -999em;
+        border: 2px solid #f14b51;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border-radius: 6px;
+        cursor: pointer;
+        opacity: .4;
+        -webitkit-transition: background 0.5s, opacity 0.5s;
+        -moz-transition: background 0.5s, opacity 0.5s;
+        -o-transition: background 0.5s, opacity 0.5s;
+        transition: background 0.5s, opacity 0.5s; }
+        #testimonials .carousel .dots li.active {
+          opacity: 1;
+          background-color: #ffdae0; }
+
+#portfolio {
+  background: #d3ffc4; }
+  #portfolio img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+  #portfolio .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+    opacity: 0;
+    background: #f14b51;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 10; }
+  #portfolio .col:hover .hover {
+    height: 100%;
+    opacity: 1; }
+  #portfolio .hoverInner {
+    position: relative;
+    top: 25px;
+    height: 0;
+    opacity: 0;
+    text-align: center; }
+  #portfolio .col:hover .hoverInner {
+    height: 100%;
+    opacity: 1;
+    -webitkit-transition: all 500ms ease-in-out 0s;
+    -moz-transition: all 500ms ease-in-out 0s;
+    -o-transition: all 500ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
+    top: 0; }
+  #portfolio .cta {
+    cursor: pointer;
+    background: #40363a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 34px;
+    color: white;
+    width: 85px;
+    margin: 0 auto; }
+    #portfolio .cta a {
+      color: white; }
+  #portfolio .box-content {
+    display: none; }
+
+#contact {
+  background: #40363a; }
+  #contact h2, #contact p {
+    color: white; }
+  #contact .col {
+    width: 48%;
+    margin: 0 1%; }
+    #contact .col a {
+      color: white; }
+  #contact .textfield, #contact .textarea {
+    padding: 0 0 20px; }
+  #contact #resultMessage p {
+    color: #f14b51;
+    margin-left: 10px;
+    font-size: 1em; }
+  #contact #contactForm label {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block; }
+  #contact textarea, #contact input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 40px;
+    width: 100%;
+    padding: 4px 6px;
+    background: white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #999999;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    outline: none; }
+    #contact textarea:focus, #contact input:focus {
+      box-shadow: none;
+      border: 1px solid #f14b51; }
+  #contact textarea {
+    height: 183px; }
+  #contact input {
+    margin: 0 0 10px;
+    height: 40px; }
+  #contact #submit {
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background: #f14b51;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    height: 40px;
+    -webitkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; }
+    #contact #submit:hover {
+      background: #f36368; }
+
 #footer #copyright {
   float: left;
   font-size: 1.25em;
-  line-height: 60px;
-}
-/* line 337, ../sass/main.scss */
+  line-height: 60px; }
 #footer #social {
-  float: right;
-}
-/* line 339, ../sass/main.scss */
-#footer #social li {
-  float: left;
-}
-/* line 341, ../sass/main.scss */
-#footer #social li a {
-  display: block;
-  height: 60px;
-  width: 60px;
-  background: url(../img/sprite.png) 0 0 no-repeat;
-  text-indent: -9999px;
-  -webitkit-transition: background-position 0.5s ease;
-  -moz-transition: background-position 0.5s ease;
-  -o-transition: background-position 0.5s ease;
-  transition: background-position 0.5s ease;
-}
-/* line 351, ../sass/main.scss */
-#footer #social li a:hover {
-  background-position-y: -60px;
-}
-/* line 356, ../sass/main.scss */
-#footer #social .behance {
-  background-color: #0686f1;
-  background-position: 0 0;
-}
-/* line 360, ../sass/main.scss */
-#footer #social .dribbble {
-  background-color: #d8457d;
-  background-position: -60px 0;
-}
-/* line 364, ../sass/main.scss */
-#footer #social .facebook {
-  background-color: #07549f;
-  background-position: -120px 0;
-}
-/* line 368, ../sass/main.scss */
-#footer #social .github {
-  background-color: #bbbbbb;
-  background-position: -180px 0;
-}
-/* line 372, ../sass/main.scss */
-#footer #social .googleplus {
-  background-color: #272727;
-  background-position: -240px 0;
-}
-/* line 376, ../sass/main.scss */
-#footer #social .linkedin {
-  background-color: #017eb4;
-  background-position: -300px 0;
-}
-/* line 380, ../sass/main.scss */
-#footer #social .twitter {
-  background-color: #29a9e1;
-  background-position: -360px 0;
-}
+  float: right; }
+  #footer #social li {
+    float: left; }
+    #footer #social li a {
+      display: block;
+      height: 60px;
+      width: 60px;
+      background: url(../img/sprite.png) 0 0 no-repeat;
+      text-indent: -9999px;
+      -webitkit-transition: background-position 0.5s ease;
+      -moz-transition: background-position 0.5s ease;
+      -o-transition: background-position 0.5s ease;
+      transition: background-position 0.5s ease; }
+      #footer #social li a:hover {
+        background-position-y: -60px; }
+  #footer #social .behance {
+    background-color: #0686f1;
+    background-position: 0 0; }
+  #footer #social .dribbble {
+    background-color: #d8457d;
+    background-position: -60px 0; }
+  #footer #social .facebook {
+    background-color: #07549f;
+    background-position: -120px 0; }
+  #footer #social .github {
+    background-color: #bbbbbb;
+    background-position: -180px 0; }
+  #footer #social .googleplus {
+    background-color: #272727;
+    background-position: -240px 0; }
+  #footer #social .linkedin {
+    background-color: #017eb4;
+    background-position: -300px 0; }
+  #footer #social .twitter {
+    background-color: #29a9e1;
+    background-position: -360px 0; }
 
 /* Colorbox alterations */
-/* line 388, ../sass/main.scss */
 #cboxTitle {
-  margin-bottom: 30px !important;
-}
+  margin-bottom: 30px !important; }
 
 /* Large Desktop */
 @media (min-width: 980px) {
-  /* line 394, ../sass/main.scss */
   .container {
-    width: 940px;
-  }
+    width: 940px; }
 
-  /* line 397, ../sass/main.scss */
   .container.inner {
     text-align: center;
-    overflow: hidden;
-  }
-}
+    overflow: hidden; } }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 405, ../sass/main.scss */
   .container {
     width: 96%;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
 
-  /* line 409, ../sass/main.scss */
   .container.inner {
-    width: 705px;
-  }
+    width: 705px; }
 
-  /* line 412, ../sass/main.scss */
   #contact textarea {
-    height: 179px;
-  }
-}
+    height: 179px; } }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 419, ../sass/main.scss */
   .container {
     width: 96%;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
 
-  /* line 423, ../sass/main.scss */
   .container.inner {
-    width: 470px;
-  }
+    width: 470px; }
 
-  /* line 426, ../sass/main.scss */
   #footer #copyright {
     float: none;
-    text-align: center;
-  }
+    text-align: center; }
 
-  /* line 430, ../sass/main.scss */
   #social {
-    display: none;
-  }
+    display: none; }
 
-  /* line 433, ../sass/main.scss */
   #contact .col {
     width: 100%;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
 /* Landscape phones and down */
 @media (max-width: 500px) {
-  /* line 441, ../sass/main.scss */
   .container {
     width: auto;
-    margin: 0 10px;
-  }
+    margin: 0 10px; }
 
-  /* line 445, ../sass/main.scss */
   .container.inner {
-    width: auto;
-  }
+    width: auto; }
 
-  /* line 448, ../sass/main.scss */
   .col {
-    margin: 1em auto;
-  }
-}
+    margin: 1em auto; } }
+
+/*# sourceMappingURL=main.css.map */
