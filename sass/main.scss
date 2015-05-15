@@ -75,7 +75,7 @@ blockquote {
         bottom: 0;
         right: 0;
         padding: 5px 10px;
-        @include inset-text-effect($brown, $shadow);
+        @include inset-text-effect($pink, $shadow);
     }
 }
 
@@ -94,6 +94,18 @@ blockquote {
 #navigation {
 	background: $brown;
 	padding: 0;
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-size: .75em;
+        z-index: 100;
+        @include box-shadow(0, 10px, 20px, $shadow);
+        @include transition(font-size .25s);
+    }
+    &.scroll {
+        @include transition(font-size .25s);
+    }
 	nav {
 		float: right;		
 		li {
@@ -343,7 +355,7 @@ html.no-touch #expertise div[data-tooltip] {
 	#copyright {
 		float: left;
 		font-size: 1.25em;
-		line-height: 36px;
+		line-height: 48px;
 	}
     .credit {
         font-size: .6em;

@@ -1,5 +1,31 @@
 (function(window, document, $, undefined) {
 	$(function() {
+        /* Navigation effects */
+        $(window).on("scroll", function (e) {
+            var nav = $('#navigation'),
+                masthead = $('#masthead'),
+                sections = $('section'),
+                windowTop = $(window).scrollTop();
+
+            /* Scroll-to-fixed navigation */
+            if (windowTop < (masthead.position().top + masthead.height() + nav.height())) {
+                nav.addClass('scroll');
+                nav.removeClass('is-fixed');
+            } else if (windowTop > nav.position().top) {
+                nav.addClass('is-fixed');
+                nav.removeClass('scroll');
+            }
+
+            /* Section highlighting */
+            for (var i = 0; i < sections.length; i++) {
+                if ((windowTop + nav.height()) > $(sections[i]).position().top &&
+                    windowTop < ($(sections[i]).position().top + $(sections[i]).height())) {
+                    console.log(sections[i].id);
+                    showVisibleSection(sections[i].id);
+                }
+            }
+        });
+
 		/* Expertise dial */
 		var dialParams = {
 			'min': 0,
@@ -49,4 +75,9 @@
 			});
 		});
 	});
+
+    var showVisibleSection = function(id) {
+        $('nav a').removeClass('current');
+        $('nav a[href=#' + id + ']').addClass('current');
+    };
 })(window, document, jQuery);

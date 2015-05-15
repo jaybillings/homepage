@@ -28,6 +28,8 @@ table {
   border-spacing: 0; }
 
 /* Border-radius */
+/* Box Shadow */
+/* Gradient */
 /* Transitions */
 /* Transform */
 /*
@@ -227,13 +229,13 @@ blockquote {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     border: none;
-    color: #40363a;
+    color: #f14b51;
     text-align: center;
     text-transform: normal;
     -o-text-overflow: clip;
     text-overflow: clip;
     white-space: pre;
-    text-shadow: 1px 1px 0 rgba(150, 150, 150, 0.6), -1px -1px 1px rgba(0, 0, 0, 0.67); }
+    text-shadow: 1px 1px 0 rgba(48, 40, 44, 0.8), -1px -1px 1px rgba(0, 0, 0, 0.67); }
 
 @media only screen and (max-width: 1024px) and (min-width: 481px) {
   #masthead {
@@ -244,6 +246,24 @@ blockquote {
 #navigation {
   background: #40363a;
   padding: 0; }
+  #navigation.is-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: .75em;
+    z-index: 100;
+    -webkit-box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8);
+    -moz-box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8);
+    box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8);
+    -webitkit-transition: font-size 0.25s;
+    -moz-transition: font-size 0.25s;
+    -o-transition: font-size 0.25s;
+    transition: font-size 0.25s; }
+  #navigation.scroll {
+    -webitkit-transition: font-size 0.25s;
+    -moz-transition: font-size 0.25s;
+    -o-transition: font-size 0.25s;
+    transition: font-size 0.25s; }
   #navigation nav {
     float: right; }
     #navigation nav li {
@@ -792,7 +812,7 @@ html.no-touch #expertise div[data-tooltip].sw {
 #footer #copyright {
   float: left;
   font-size: 1.25em;
-  line-height: 36px; }
+  line-height: 48px; }
 #footer .credit {
   font-size: .6em; }
 #footer #social {
