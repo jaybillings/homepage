@@ -1,13 +1,12 @@
 $white:         rgb(255,255,255);       // Background, navigation font
 $black:         rgb(0,0,0);             // Headers font
 $grey:          rgb(153,153,153);       // Bullets, form
-$gray:          $grey;
 $greyLight:     rgb(238, 238, 238);     // Tooltips
-$grayLight:     $greyLight;
-$brown:         rgb(64,54,58);          // Navigation, body font
-$greenDark:     rgb(163,217,172);       // Expertise
-$greenMedium:   rgb(196,237,183);       // Expertise canvas
-$greenLight:    rgb(211,255,196);       // Portfolio
-$pink:          rgb(241,75,81);
+
+$brown:         rgb(41, 34, 29);        // Navigation, body font
+$blueDark:      rgb(26, 59, 95);        // Expertise
+$blueMedium:    rgb(58, 97, 133);       // Expertise canvas
+$blueLight:     rgb(181, 219, 233);     // Portfolio
+$orange:        rgb(217, 81, 59);       // Accent color
 
 $shadow:        rgba(48,40,44,.8);      // Text and navigation shadow

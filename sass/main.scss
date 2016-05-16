@@ -1,3 +1,5 @@
+/* Mobile-First -- Default is 480px */
+
 @import "reset";
 @import "mixins";
 @import "colors";
@@ -17,14 +19,13 @@ canvas {
 	border: 1px dotted;
 }
 
-
 /* LINKS */
 a {
-	color: $pink;
+	color: $orange;
     @include transition(color 0.5s ease);
 	text-decoration: none;
 	&:hover {
-		color: darken($pink, 20%);
+		color: darken($orange, 20%);
 	}
 	&:focus {
 		outline: thin dotted;
@@ -37,12 +38,13 @@ a {
 /* BLOCKQUOTES */
 blockquote {
 	position: relative;
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 	font-size: 1.5em;
 	font-weight: 300;
 	line-height: 1.5em;
 	text-align: center;
+    z-index: 0;
 	&:before {
 		display: block;
 		position: absolute;
@@ -50,15 +52,15 @@ blockquote {
 		left: -.35em;
 		content: "\201C";
 		font: 3.25em Georgia, serif;
-		color: $pink;
+		color: $orange;
         z-index: 100;
 	}
 	& cite {
 		display: block;
 		margin-top: 1em;
-		color: $pink;
+		color: $orange;
 		&:before {
-			color: $pink;
+			color: $orange;
 			content: "\2013 \2009";
 		}
 	}
@@ -66,7 +68,6 @@ blockquote {
 
 /* MAIN LAYOUT */
 #masthead {
-	background: $brown url(../img/header-full.png) no-repeat 50% 0;
 	background-size: cover;
 	height: 22.5em;
 	position: relative;
@@ -75,20 +76,8 @@ blockquote {
         bottom: 0;
         right: 0;
         padding: 5px 10px;
-        @include inset-text-effect($pink, $shadow);
+        @include inset-text-effect($orange, $shadow);
     }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 481px) {
-	#masthead {
-		background-image: url(../img/header-medium.png);
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	#masthead {
-		background-image: url(../img/header-small.png);
-	}
 }
 
 #navigation {
@@ -107,24 +96,23 @@ blockquote {
         @include transition(font-size .25s);
     }
 	nav {
-		float: right;		
+		float: left;
 		li {
-			display: block;
-			float: left;
+			display: inline;
 			font-size: 1.125em;
-			line-height: 4.4em;
-			margin-left: 0.25em;
+			line-height: 3.5em;
+			margin-right: 0.5em;
 			a {
-				padding: 0.25em 0.5em;
+				padding: 0.5em;
 				color: #fff;
 				text-decoration: none;
                 @include border-radius(50px);
                 @include transition(background-color);
-				&:hover {
-					background: rgba($pink, 0.25);
+				&:active {
+					background: rgba($orange, 0.25);
 				}
 				&.current {
-					background: $pink;
+					background: $orange;
 				}
 			}
 		}
@@ -133,12 +121,10 @@ blockquote {
 
 #welcome {
     background: $white;
-	padding: 5em 0;
 	p {
 		text-align: left;
 	}
     img {
-
         float: left;
         width: 15em;
         height: 15em;
@@ -149,22 +135,28 @@ blockquote {
 }
 
 #expertise {
-	background: $greenDark;
+	background: $blueDark;
 	p {
 		text-align: center;
+        color: $grey;
 	}
 	canvas {
 		border: none;
 	}
-    .col {
-        cursor: help;
-    }
 }
 
+#expertise, #portfolio {
+    & .col {
+        width: 100%;
+        margin: 0 0 6em;
+        cursor: help;
+        text-align: center;
+    }
+}
 /* Expertise tooltips -- desktop and mobile */
 
 html.touch #expertise div[data-tooltip]  {
-    @include tooltip(se, $grayLight);
+    @include tooltip(se, $greyLight);
     &::before, &::after {
         opacity: 1;
         display: block;
@@ -176,16 +168,16 @@ html.touch #expertise div[data-tooltip]  {
 
 html.no-touch #expertise div[data-tooltip] {
     &.ne {
-        @include tooltip(ne, $grayLight);
+        @include tooltip(ne, $greyLight);
     }
     &.nw {
-        @include tooltip(nw, $grayLight);
+        @include tooltip(nw, $greyLight);
     }
     &.se {
-        @include tooltip(se, $grayLight);
+        @include tooltip(se, $greyLight);
     }
     &.sw {
-        @include tooltip(sw, $grayLight);
+        @include tooltip(sw, $greyLight);
     }
 }
 
@@ -215,7 +207,7 @@ html.no-touch #expertise div[data-tooltip] {
                 height: 10px;
                 margin: 0 4px;
                 text-indent: -999em;
-                border: 2px solid $pink;
+                border: 2px solid $orange;
                 @include border-radius(6px);
                 cursor: pointer;
                 opacity: .4;
@@ -230,7 +222,7 @@ html.no-touch #expertise div[data-tooltip] {
 }
 
 #portfolio {
-	background: $greenLight;
+	background: $blueLight;
 	img {
         @include border-radius(50%);
 	}
@@ -241,7 +233,7 @@ html.no-touch #expertise div[data-tooltip] {
 		top: 0;
 		height: 0;
 		opacity: 0;
-		background: $pink;
+		background: $orange;
         @include border-radius(50%);
 		z-index: 10;
 	}
@@ -286,8 +278,8 @@ html.no-touch #expertise div[data-tooltip] {
 		color: $white;
 	}
 	.col {
-		width: 48%;
-		margin: 0 1%;
+		width: 100%;
+		margin: 0;
 		a {
 			color: $white;
 		}
@@ -296,7 +288,7 @@ html.no-touch #expertise div[data-tooltip] {
 		padding: 0 0 20px;
 	}
 	#resultMessage p {
-		color: $pink;
+		color: $orange;
 		margin-left: 10px;
 		font-size: 1em;
 	}
@@ -321,7 +313,7 @@ html.no-touch #expertise div[data-tooltip] {
 		outline: none;
 		&:focus {
 			box-shadow: none;
-			border: 1px solid $pink;
+			border: 1px solid $orange;
 		}
 	}
 	textarea {
@@ -339,14 +331,14 @@ html.no-touch #expertise div[data-tooltip] {
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 		width: 100%;
-		background: $pink;
+		background: $orange;
 		border-width: 1px;
 		border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
         @include border-radius(4px);
 		height: 40px;
         @include transition(background-color 0.5s ease);
 		&:hover {
-			background: lighten($pink, 5%);
+			background: lighten($orange, 5%);
 		}
 	}
 }
@@ -412,67 +404,79 @@ html.no-touch #expertise div[data-tooltip] {
 	margin-bottom: 30px !important;
 }
 
-/* Large Desktop */
-@media (min-width: 980px) {
-	.container {
-		width: 940px;
-	}
-	.container.inner {
-		text-align: center;
-		overflow: hidden;
-	}
+/* Responsive - Extra Small */
+@media (min-width: 320px) {
+    #masthead {
+        background: $brown url(../img/header-xsmall.png) no-repeat 50% 0;
+    }
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-	.container {
-		width: 96%;
-		margin: 0 auto;
-	}
-	.container.inner {
-		width: 705px;
-	}
-	#contact textarea {
-		height: 179px;
-	}
-}
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-	.container {
-		width: 96%;
-		margin: 0 auto;
-	}
-	.container.inner {
-		width: 470px;
-	}
-	#footer #copyright {
-	    float: none;
-		text-align: center;
-	}
-	#social {
-		display: none;
-	}
-	#contact .col {
-		width: 100%;
-		margin: 0 auto
-	}
-}
-
-/* Landscape phones and down */
-@media (max-width: 500px) {
-	.container {
-		width: auto;
-		margin: 0 10px;
-	}
-	.container.inner {
-		width: auto;
-	}
-	.col {
-		margin: 1em auto;
+/* Responsive - Small */
+@media (min-width: 480px) {
+    .container {
+        width: auto;
+        margin: 0 10px;
+    }
+    .container.inner {
+        width: auto;
+    }
+    .col {
+        margin: 1em auto;
         display: block;
-	}
+    }
+    #masthead {
+        background-image: url(../img/header-small.png);
+    }
     #expertise .col {
         margin-bottom: 6em;
+    }
+}
+
+/* Responsive - Medium */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .container.inner {
+        width: 470px;
+    }
+    #masthead {
+        background-image: url(../img/header-medium.png);
+    }
+    #footer #copyright {
+        float: none;
+        text-align: center;
+    }
+    #social {
+        display: none;
+    }
+    #contact .col {
+        width: 100%;
+        margin: 0 auto
+    }
+    #contact textarea {
+        height: 179px;
+    }
+}
+
+/* Responsive - Large */
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 940px;
+    }
+    .container.inner {
+        text-align: center;
+        overflow: hidden;
+    }
+    #masthead {
+        background-image: url(../img/header-large.png);
+    }
+}
+
+/* Responsive - Extra Large */
+@media only screen and (min-width: 1280px) {
+    #masthead {
+        background-image: url(../img/header-xlarge.png);
     }
 }
