@@ -1,29 +1,49 @@
 (function(window, document, $, undefined) {
 	$(function() {
+        var $nav = $('#navigation'),
+            $masthead = $('#masthead');
+
         /* Navigation effects */
         $(window).on("scroll", function (e) {
-            var nav = $('#navigation'),
-                masthead = $('#masthead'),
-                sections = $('section'),
+            var $sections = $('section'),
+                $welcome = $('#welcome');
                 windowTop = $(window).scrollTop();
 
             /* Scroll-to-fixed navigation */
-            if (windowTop < (masthead.position().top + masthead.height() + nav.height())) {
-                nav.addClass('scroll');
-                nav.removeClass('is-fixed');
-            } else if (windowTop > nav.position().top) {
-                nav.addClass('is-fixed');
-                nav.removeClass('scroll');
+            if (windowTop < ($masthead.offset().top + $masthead.height())) {
+                $nav.addClass('scroll');
+                $nav.removeClass('is-fixed');
+                $welcome.removeClass('is-fixed');
+            } else {
+                $nav.addClass('is-fixed');
+                $welcome.addClass('is-fixed');
+                $nav.removeClass('scroll');
             }
 
             /* Section highlighting */
-            for (var i = 0; i < sections.length; i++) {
-                if ((windowTop + nav.height()) > $(sections[i]).position().top &&
-                    windowTop < ($(sections[i]).position().top + $(sections[i]).height())) {
-                    console.log(sections[i].id);
-                    showVisibleSection(sections[i].id);
+            for (var i = 0; i < $sections.length; i++) {
+                if ((windowTop + $nav.height()) >= $($sections[i]).offset().top) {
+                    showVisibleSection($sections[i].id);
                 }
             }
+        });
+
+		/* Subsection navigation */
+		$nav.find('a').click(function() {
+            var section = $(this).attr('href'),
+                $section = $(section),
+                position;
+
+            if (section == '#welcome') {
+                position = $section.offset().top - $masthead.height() + 1;
+            } else {
+                position = $section.offset().top - $nav.height() + 1;
+            }
+            $('html, body').animate({
+                scrollTop: position
+            }, 2000);
+
+            return false;
         });
 
 		/* Expertise dial */
@@ -68,10 +88,8 @@
 		$("#contactForm").submit(function() {
 			$("#resultMessage").empty();
 			var data = $(this).serialize();
-			console.log('data: ' + data)
 			$.post("contact_form.php", data, function(result) {
 				$("#resultMessage").html(result);
-				console.log('DONE');
 			});
 		});
 	});

@@ -133,6 +133,9 @@ blockquote {
 
 #welcome {
     background: $white;
+    &.is-fixed {
+        margin-top: 10.0em;
+    }
 	p {
 		text-align: left;
 	}
@@ -435,7 +438,9 @@ html.no-touch #expertise div[data-tooltip] {
     #masthead {
         background-image: url(../img/header-medium.png);
     }
-
+    #welcome.is-fixed {
+        margin-top: 2em;
+    }
     #expertise, #portfolio {
         & .col {
             width: 45%;

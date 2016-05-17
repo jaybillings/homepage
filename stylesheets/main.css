@@ -300,6 +300,8 @@ blockquote {
 
 #welcome {
   background: white; }
+  #welcome.is-fixed {
+    margin-top: 10.0em; }
   #welcome p {
     text-align: left; }
   #welcome img {
@@ -878,6 +880,9 @@ html.no-touch #expertise div[data-tooltip].sw {
 @media only screen and (min-width: 768px) {
   #masthead {
     background-image: url(../img/header-medium.png); }
+
+  #welcome.is-fixed {
+    margin-top: 2em; }
 
   #expertise .col, #portfolio .col {
     width: 45%;
