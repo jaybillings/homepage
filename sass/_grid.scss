@@ -1,7 +1,11 @@
 .container {
 	padding: 0;
-	margin: auto 1.5em;
+	margin: 0 1.5em;
 	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	.inner {
+        text-align: center;
+        overflow: hidden;
+    }
 }
 
 .container:before, .container:after {
@@ -21,6 +25,6 @@ section {
 .col {
 	display: inline-block;
 	position: relative;
-	width: 185px;
+	width: 100%;
 	margin: 20px 25px;
 }

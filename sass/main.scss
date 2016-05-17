@@ -68,6 +68,7 @@ blockquote {
 
 /* MAIN LAYOUT */
 #masthead {
+    background: $brown url(../img/header-small.png) no-repeat 50% 0;
 	background-size: cover;
 	height: 22.5em;
 	position: relative;
@@ -87,16 +88,24 @@ blockquote {
         position: fixed;
         top: 0;
         width: 100%;
-        font-size: .75em;
+        font-size: .8em;
         z-index: 100;
         @include box-shadow(0, 10px, 20px, $shadow);
         @include transition(font-size .25s);
+        .container {
+            margin: 1em 1.5em;
+        }
     }
     &.scroll {
         @include transition(font-size .25s);
     }
+    h1 {
+        margin-right: 1em;
+    }
 	nav {
 		float: left;
+        width: auto;
+        margin: 0.5em 0;
 		li {
 			display: inline;
 			font-size: 1.125em;
@@ -116,6 +125,9 @@ blockquote {
 				}
 			}
 		}
+        &:first-child a {
+            padding-left: 0;
+        }
 	}
 }
 
@@ -143,16 +155,12 @@ blockquote {
 	canvas {
 		border: none;
 	}
-}
-
-#expertise, #portfolio {
-    & .col {
-        width: 100%;
-        margin: 0 0 6em;
-        cursor: help;
-        text-align: center;
+    .col {
+        margin-bottom: 6em;
     }
 }
+
+
 /* Expertise tooltips -- desktop and mobile */
 
 html.touch #expertise div[data-tooltip]  {
@@ -237,6 +245,9 @@ html.no-touch #expertise div[data-tooltip] {
         @include border-radius(50%);
 		z-index: 10;
 	}
+    .col {
+        width: 80%;
+    }
 	.col:hover .hover {
 		height: 100%;
 		opacity: 1;
@@ -272,6 +283,14 @@ html.no-touch #expertise div[data-tooltip] {
 	}
 }
 
+#expertise, #portfolio {
+    & .col {
+        margin: 0 0 6em;
+        cursor: help;
+        text-align: center;
+    }
+}
+
 #contact {
 	background: $brown;
 	h2, p {
@@ -279,7 +298,7 @@ html.no-touch #expertise div[data-tooltip] {
 	}
 	.col {
 		width: 100%;
-		margin: 0;
+		margin: 0 auto;
 		a {
 			color: $white;
 		}
@@ -317,7 +336,7 @@ html.no-touch #expertise div[data-tooltip] {
 		}
 	}
 	textarea {
-		height: 183px;
+		height: 10em;
 	}
 	input {
 		margin: 0 0 10px;
@@ -345,9 +364,11 @@ html.no-touch #expertise div[data-tooltip] {
 
 #footer {
 	#copyright {
-		float: left;
+		//float: left;
+        float: none;
+        text-align: center;
 		font-size: 1.25em;
-		line-height: 48px;
+		line-height: 2.5em;
 	}
     .credit {
         font-size: .6em;
@@ -399,78 +420,42 @@ html.no-touch #expertise div[data-tooltip] {
 	}
 }
 
-/* Colorbox alterations */
-#cboxTitle {
-	margin-bottom: 30px !important;
-}
-
 /* Responsive - Extra Small */
 @media (min-width: 320px) {
     #masthead {
-        background: $brown url(../img/header-xsmall.png) no-repeat 50% 0;
+        background-image: url(../img/header-xsmall.png);
     }
 }
 
-/* Responsive - Small */
-@media (min-width: 480px) {
-    .container {
-        width: auto;
-        margin: 0 10px;
-    }
-    .container.inner {
-        width: auto;
-    }
-    .col {
-        margin: 1em auto;
-        display: block;
-    }
+/* Responsive - Small (Default) */
+@media (min-width: 480px) {  }
+
+/* Responsive - Medium */
+@media only screen and (min-width: 768px) {
     #masthead {
-        background-image: url(../img/header-small.png);
+        background-image: url(../img/header-medium.png);
+    }
+
+    #expertise, #portfolio {
+        & .col {
+            width: 45%;
+            margin: 1em;
+        }
     }
     #expertise .col {
         margin-bottom: 6em;
     }
 }
 
-/* Responsive - Medium */
-@media only screen and (min-width: 768px) {
-    .container {
-        width: 96%;
-        margin: 0 auto;
-    }
-    .container.inner {
-        width: 470px;
-    }
-    #masthead {
-        background-image: url(../img/header-medium.png);
-    }
-    #footer #copyright {
-        float: none;
-        text-align: center;
-    }
-    #social {
-        display: none;
-    }
-    #contact .col {
-        width: 100%;
-        margin: 0 auto
-    }
-    #contact textarea {
-        height: 179px;
-    }
-}
-
 /* Responsive - Large */
 @media only screen and (min-width: 960px) {
-    .container {
-        width: 940px;
-    }
-    .container.inner {
-        text-align: center;
-        overflow: hidden;
-    }
     #masthead {
         background-image: url(../img/header-large.png);
+    }
+    #expertise, #portfolio {
+        & .col {
+            width: 29%;
+        }
     }
 }
 
@@ -479,4 +464,9 @@ html.no-touch #expertise div[data-tooltip] {
     #masthead {
         background-image: url(../img/header-xlarge.png);
     }
+}
+
+/* Colorbox alterations */
+#cboxTitle {
+    margin-bottom: 30px !important;
 }
