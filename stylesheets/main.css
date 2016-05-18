@@ -75,7 +75,8 @@ h2 {
   #welcome h2 {
     font-size: 6em;
     text-align: center;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    color: #29221d; }
   #expertise h2 {
     color: #eeeeee; }
 
@@ -301,14 +302,14 @@ blockquote {
 #welcome {
   background: white; }
   #welcome.is-fixed {
-    margin-top: 10.0em; }
+    margin-top: 6.5em; }
   #welcome p {
     text-align: left; }
   #welcome img {
-    float: left;
-    width: 15em;
-    height: 15em;
-    margin-right: 2em;
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 auto 2em;
     border: 4px solid #40363a;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -324,7 +325,8 @@ blockquote {
   #expertise canvas {
     border: none; }
   #expertise .col {
-    margin-bottom: 6em; }
+    width: 200px;
+    margin: 0 1em 6em; }
 
 /* Expertise tooltips -- desktop and mobile */
 html.touch #expertise div[data-tooltip] {
@@ -753,7 +755,6 @@ html.no-touch #expertise div[data-tooltip].sw {
     display: none; }
 
 #expertise .col, #portfolio .col {
-  margin: 0 0 6em;
   cursor: help;
   text-align: center; }
 
@@ -874,8 +875,14 @@ html.no-touch #expertise div[data-tooltip].sw {
 /* Responsive - Extra Small */
 @media (min-width: 320px) {
   #masthead {
-    background-image: url(../img/header-xsmall.png); } }
+    background-image: url(../img/header-xsmall.png); }
+
+  #welcome img {
+    width: 230px; } }
 /* Responsive - Small (Default) */
+@media (min-width: 480px) {
+  #welcome img {
+    width: 330px; } }
 /* Responsive - Medium */
 @media only screen and (min-width: 768px) {
   #masthead {
@@ -883,19 +890,27 @@ html.no-touch #expertise div[data-tooltip].sw {
 
   #welcome.is-fixed {
     margin-top: 2em; }
+  #welcome img {
+    float: left;
+    width: 15em;
+    height: 15em;
+    margin: 0 2em 1em 0;
+    border: 4px solid #40363a;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 
-  #expertise .col, #portfolio .col {
+  #portfolio .col {
     width: 45%;
-    margin: 1em; }
-
-  #expertise .col {
-    margin-bottom: 6em; } }
+    margin: 1em; } }
 /* Responsive - Large */
 @media only screen and (min-width: 960px) {
   #masthead {
     background-image: url(../img/header-large.png); }
 
-  #expertise .col, #portfolio .col {
+  #portfolio .col {
     width: 29%; } }
 /* Responsive - Extra Large */
 @media only screen and (min-width: 1280px) {
