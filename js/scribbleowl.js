@@ -1,45 +1,22 @@
 (function(window, document, $, undefined) {
 	$(function() {
         var $nav = $('#navigation'),
-            $masthead = $('#masthead');
-
-        /* Navigation effects */
-        $(window).on("scroll", function (e) {
-            var $sections = $('section'),
-                $welcome = $('#welcome');
-                windowTop = $(window).scrollTop();
-
-            /* Scroll-to-fixed navigation */
-            if (windowTop < ($masthead.offset().top + $masthead.height())) {
-                $nav.addClass('scroll');
-                $nav.removeClass('is-fixed');
-                $welcome.removeClass('is-fixed');
-            } else {
-                $nav.addClass('is-fixed');
-                $welcome.addClass('is-fixed');
-                $nav.removeClass('scroll');
-            }
-
-            /* Section highlighting */
-            for (var i = 0; i < $sections.length; i++) {
-                if ((windowTop + $nav.height()) >= $($sections[i]).offset().top) {
-                    showVisibleSection($sections[i].id);
-                }
-            }
-        });
+            $masthead = $('#masthead'),
+            slider;
 
 		/* Subsection navigation */
 		$nav.find('a').click(function() {
-            var section = $(this).attr('href'),
+            var $thePage = $('html, body'),
+                section = $(this).attr('href'),
                 $section = $(section),
                 position;
 
-            if (section == '#welcome') {
-                position = $section.offset().top - $masthead.height() + 1;
-            } else {
-                position = $section.offset().top - $nav.height() + 1;
-            }
-            $('html, body').animate({
+            // Cancel any ongoing animation
+            $thePage.stop();
+
+            position = $section.offset().top - $nav.height() + 1;
+
+            $thePage.animate({
                 scrollTop: position
             }, 2000);
 
@@ -59,10 +36,10 @@
 		});
 
         /* Testimonials carousel */
-        $('.carousel').unslider({
-            fluid: false,
-            dots: true,
-            speed: 500
+        slider = $('.carousel').unslider({
+            autoplay: false,
+            arrows: false,
+            animateHeight: true
         });
 
 		/* Portfolio colorbox */
@@ -92,10 +69,73 @@
 				$("#resultMessage").html(result);
 			});
 		});
+
+        /* Navigation effects */
+        $(window).on("scroll", function (e) {
+            var $welcome = $('#welcome'),
+                windowTop = $(window).scrollTop(),
+                currentSection;
+
+            /* Scroll-to-fixed navigation */
+            if (windowTop < ($masthead.offset().top + $masthead.height())) {
+                $nav.addClass('scroll');
+                $nav.removeClass('is-fixed');
+                $welcome.removeClass('is-fixed');
+            } else {
+                $nav.addClass('is-fixed');
+                $welcome.addClass('is-fixed');
+                $nav.removeClass('scroll');
+            }
+
+            /* Section highlighting */
+            currentSection = findCurrentSection();
+            console.log(currentSection);
+            showCurrentSection(currentSection);
+        });
 	});
 
-    var showVisibleSection = function(id) {
+
+    /* Utility functions */
+
+    /*
+     * Name: findCurrentSection
+     * Input: None
+     * Output: section id - string
+     * Side Effects: none
+     */
+    var findCurrentSection = function() {
+        var sections = $('section'),
+            visibleTop = $(window).scrollTop() + $('#navigation').height(),
+            i,
+            $section,
+            sectionTop;
+
+        for (i = 0; i < sections.length; i++) {
+            $section = $(sections[i]);
+            sectionTop = $section.offset().top;
+
+            if ((visibleTop >= sectionTop)
+                && (visibleTop < (sectionTop + $section.height()))) {
+                return $section.attr('id')
+            } else if (visibleTop < $('#welcome').offset().top) {
+                return 'masthead'
+            }
+        }
+
+        return ''
+    };
+
+    /*
+     * Name: showCurrentSection
+     * Input: section id - string
+     * Output: None
+     * Side Effects: Adds 'current' class to nav tab & removes from others
+     */
+    var showCurrentSection = function(id) {
         $('nav a').removeClass('current');
-        $('nav a[href=#' + id + ']').addClass('current');
+
+        if (id) {
+            $('nav a[href=#' + id + ']').addClass('current');
+        }
     };
 })(window, document, jQuery);

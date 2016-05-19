@@ -1,0 +1,82 @@
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+/* line 1, ../sass/unslider/_reset.scss */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+  /* line 10, ../sass/unslider/_reset.scss */
+  .unslider .unslider-wrap {
+    position: relative; }
+    /* line 13, ../sass/unslider/_reset.scss */
+    .unslider .unslider-wrap.unslider-carousel > li {
+      float: left; }
+  /* line 20, ../sass/unslider/_reset.scss */
+  .unslider .unslider-vertical > ul {
+    height: 100%; }
+  /* line 24, ../sass/unslider/_reset.scss */
+  .unslider .unslider-vertical li {
+    float: none;
+    width: 100%; }
+  /* line 32, ../sass/unslider/_reset.scss */
+  .unslider .unslider-fade {
+    position: relative; }
+    /* line 35, ../sass/unslider/_reset.scss */
+    .unslider .unslider-fade .unslider-wrap li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 8; }
+      /* line 42, ../sass/unslider/_reset.scss */
+      .unslider .unslider-fade .unslider-wrap li.unslider-active {
+        z-index: 10; }
+  /* line 48, ../sass/unslider/_reset.scss */
+  .unslider ul, .unslider ol, .unslider li {
+    list-style: none;
+    /* Reset any weird spacing */
+    margin: 0;
+    padding: 0;
+    border: none; }
+  /* line 58, ../sass/unslider/_reset.scss */
+  .unslider .unslider-arrow {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer; }
+    /* line 65, ../sass/unslider/_reset.scss */
+    .unslider .unslider-arrow.next {
+      left: auto;
+      right: 20px; }
+
+/* line 2, ../sass/unslider/_dots.scss */
+.unslider-nav ol {
+  list-style: none;
+  text-align: center; }
+  /* line 6, ../sass/unslider/_dots.scss */
+  .unslider-nav ol li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #d9513b;
+    cursor: pointer; }
+    /* line 22, ../sass/unslider/_dots.scss */
+    .unslider-nav ol li.unslider-active {
+      background: #d9513b;
+      cursor: default; }
