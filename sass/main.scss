@@ -239,7 +239,8 @@ html.no-touch #expertise div[data-tooltip] {
 		height: 100%;
 		opacity: 1;
         @include transition(all 1000ms ease-in-out 0s);
-		top: 20%;
+		top: 0;
+        margin-top: 30%;
 	}
 	.cta {
 		cursor: pointer;

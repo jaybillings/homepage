@@ -1,5 +1,6 @@
-/* Mobile-First -- Default is 480px */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400,700");
+/* Mobile-First -- Default is 480px */
+/* line 1, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -8,22 +9,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
+/* line 10, ../sass/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 14, ../sass/_reset.scss */
 body {
   line-height: 1; }
 
+/* line 18, ../sass/_reset.scss */
 ol, ul {
   list-style: none; }
 
+/* line 22, ../sass/_reset.scss */
 blockquote, q {
   quotes: none; }
 
+/* line 26, ../sass/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
+/* line 31, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -37,15 +44,18 @@ table {
     Inset text
     Generated at: http://enjoycss.com/
 */
+/* line 4, ../sass/_fonts.scss */
 body {
   font: 100%/1.5 'Open Sans', verdana, arial, helvetica, sans-serif;
   color: #29221d; }
 
+/* line 9, ../sass/_fonts.scss */
 p {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.5em;
   margin: 0 0 0.5em; }
+  /* line 14, ../sass/_fonts.scss */
   #portfolio p {
     font-size: 14px;
     line-height: 18px;
@@ -53,12 +63,14 @@ p {
     padding: 0 10px;
     margin: 0 0 15px; }
 
+/* line 23, ../sass/_fonts.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', 'Trebuchet MS', verdana, arial, helvetica, helve, sans-serif;
   font-weight: 300;
   line-height: 1em;
   margin: 0 0 1em; }
 
+/* line 30, ../sass/_fonts.scss */
 h1 {
   display: inline;
   float: left;
@@ -67,36 +79,44 @@ h1 {
   font-weight: 700;
   line-height: 2em;
   text-transform: uppercase; }
+  /* line 38, ../sass/_fonts.scss */
   h1 a, h1 a:hover {
     color: white; }
 
+/* line 43, ../sass/_fonts.scss */
 h2 {
   font-size: 2.25em; }
+  /* line 45, ../sass/_fonts.scss */
   #welcome h2 {
     font-size: 6em;
     text-align: center;
     margin-bottom: 0.5em;
     color: #29221d; }
+  /* line 51, ../sass/_fonts.scss */
   #expertise h2 {
     color: #eeeeee; }
 
+/* line 56, ../sass/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: 400;
   margin: 35px 0 20px;
   color: white; }
 
+/* line 63, ../sass/_fonts.scss */
 label {
   font-size: 1.25em;
   line-height: 1.5em;
   color: white; }
 
+/* line 69, ../sass/_fonts.scss */
 textarea, input[type='text'], input[type='email'], input {
   font-family: 'Open Sans', verdana, arial, helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #999999; }
 
+/* line 76, ../sass/_fonts.scss */
 #submit {
   font-weight: 700;
   text-transform: uppercase;
@@ -105,43 +125,53 @@ textarea, input[type='text'], input[type='email'], input {
 
 /* Responsive - Extra Small */
 @media (min-width: 320px) {
+  /* line 85, ../sass/_fonts.scss */
   body {
     font-size: 80%;
     line-height: 50%; } }
 /* Responsive - Small */
 @media (min-width: 480px) {
+  /* line 93, ../sass/_fonts.scss */
   body {
     font-size: 80%; } }
 /* Responsive - Medium */
 @media (min-width: 768px) {
+  /* line 100, ../sass/_fonts.scss */
   body {
     font-size: 90%;
     line-height: 80%; } }
 /* Responsive - Large */
 @media (min-width: 960px) {
+  /* line 108, ../sass/_fonts.scss */
   body {
     font-size: 100%;
     line-height: 100%; } }
+/* line 1, ../sass/_grid.scss */
 .container {
   padding: 0;
   margin: 0 1.5em;
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
+  /* line 5, ../sass/_grid.scss */
   .container .inner {
     text-align: center;
     overflow: hidden; }
 
+/* line 11, ../sass/_grid.scss */
 .container:before, .container:after {
   content: "";
   display: table;
   line-height: 0; }
 
+/* line 17, ../sass/_grid.scss */
 .container:after {
   clear: both; }
 
+/* line 21, ../sass/_grid.scss */
 section {
   padding: 2em 0; }
 
+/* line 25, ../sass/_grid.scss */
 .col {
   display: inline-block;
   position: relative;
@@ -169,6 +199,7 @@ section {
 * Where the magic happens
 */
 /* IMAGES */
+/* line 11, ../sass/main.scss */
 img, canvas {
   border: 0;
   max-width: 100%;
@@ -176,10 +207,12 @@ img, canvas {
   width: auto\9;
   /* ie8 */ }
 
+/* line 18, ../sass/main.scss */
 canvas {
   border: 1px dotted; }
 
 /* LINKS */
+/* line 23, ../sass/main.scss */
 a {
   color: #d9513b;
   -webitkit-transition: color 0.5s ease;
@@ -187,14 +220,18 @@ a {
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
   text-decoration: none; }
+  /* line 27, ../sass/main.scss */
   a:hover {
     color: #922d1c; }
+  /* line 30, ../sass/main.scss */
   a:focus {
     outline: thin dotted; }
+  /* line 33, ../sass/main.scss */
   a a:hover, a a:active {
     outline: 0; }
 
 /* BLOCKQUOTES */
+/* line 39, ../sass/main.scss */
 blockquote {
   position: relative;
   width: 85%;
@@ -204,6 +241,7 @@ blockquote {
   line-height: 1.5em;
   text-align: center;
   z-index: 0; }
+  /* line 48, ../sass/main.scss */
   blockquote:before {
     display: block;
     position: absolute;
@@ -213,20 +251,24 @@ blockquote {
     font: 3.25em Georgia, serif;
     color: #d9513b;
     z-index: 100; }
+  /* line 58, ../sass/main.scss */
   blockquote cite {
     display: block;
     margin-top: 1em;
     color: #d9513b; }
+    /* line 62, ../sass/main.scss */
     blockquote cite:before {
       color: #d9513b;
       content: "\2013 \2009"; }
 
 /* MAIN LAYOUT */
+/* line 70, ../sass/main.scss */
 #masthead {
   background: #29221d url(../img/header-small.png) no-repeat 50% 0;
   background-size: cover;
   height: 22.5em;
   position: relative; }
+  /* line 75, ../sass/main.scss */
   #masthead cite {
     position: absolute;
     bottom: 0;
@@ -245,9 +287,11 @@ blockquote {
     white-space: pre;
     text-shadow: 1px 1px 0 rgba(48, 40, 44, 0.8), -1px -1px 1px rgba(0, 0, 0, 0.67); }
 
+/* line 84, ../sass/main.scss */
 #navigation {
   background: #29221d;
   padding: 0; }
+  /* line 87, ../sass/main.scss */
   #navigation.is-fixed {
     position: fixed;
     top: 0;
@@ -256,17 +300,21 @@ blockquote {
     -webkit-box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8);
     -moz-box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8);
     box-shadow: 0 10px 20px rgba(48, 40, 44, 0.8); }
+  /* line 94, ../sass/main.scss */
   #navigation h1 {
     margin-right: 1em; }
+  /* line 97, ../sass/main.scss */
   #navigation nav {
     float: left;
     width: auto;
     margin: 0.5em 0; }
+    /* line 101, ../sass/main.scss */
     #navigation nav li {
       display: inline;
       font-size: 1.125em;
       line-height: 2.5em;
       margin-right: 0.5em; }
+      /* line 106, ../sass/main.scss */
       #navigation nav li a {
         padding: 0.5em;
         color: #fff;
@@ -280,22 +328,30 @@ blockquote {
         -moz-transition: background-color;
         -o-transition: background-color;
         transition: background-color; }
+        /* line 112, ../sass/main.scss */
         #navigation nav li a:active {
           background: rgba(217, 81, 59, 0.25); }
+        /* line 115, ../sass/main.scss */
         #navigation nav li a.current {
           background: #d9513b; }
+    /* line 120, ../sass/main.scss */
     #navigation nav:first-child a {
       padding-left: 0; }
+  /* line 124, ../sass/main.scss */
   #navigation .container {
     margin: 0;
     padding: 1em 1.5em; }
 
+/* line 130, ../sass/main.scss */
 #welcome {
   background: white; }
+  /* line 132, ../sass/main.scss */
   #welcome.is-fixed {
     margin-top: 6.5em; }
+  /* line 135, ../sass/main.scss */
   #welcome p {
     text-align: left; }
+  /* line 138, ../sass/main.scss */
   #welcome img {
     display: block;
     float: none;
@@ -309,20 +365,26 @@ blockquote {
     -o-border-radius: 50%;
     border-radius: 50%; }
 
+/* line 149, ../sass/main.scss */
 #expertise {
   background: #1a3b5f; }
+  /* line 151, ../sass/main.scss */
   #expertise p {
     text-align: center;
     color: #999999; }
+  /* line 155, ../sass/main.scss */
   #expertise canvas {
     border: none; }
+  /* line 158, ../sass/main.scss */
   #expertise .col {
     width: 200px;
     margin: 0 2em 6em; }
 
 /* Expertise tooltips -- desktop and mobile */
+/* line 167, ../sass/main.scss */
 html.touch #expertise div[data-tooltip] {
   position: relative; }
+  /* line 86, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:before, html.touch #expertise div[data-tooltip]:after {
     opacity: 0;
     z-index: 98;
@@ -332,8 +394,10 @@ html.touch #expertise div[data-tooltip] {
     transition: opacity 300ms, visibility 0ms linear 300ms;
     pointer-events: none; }
     @media (max-width: 480px) {
+      /* line 86, ../sass/_tooltips.scss */
       html.touch #expertise div[data-tooltip]:before, html.touch #expertise div[data-tooltip]:after {
         display: none; } }
+  /* line 93, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -347,9 +411,11 @@ html.touch #expertise div[data-tooltip] {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     background-color: #eeeeee;
-    color: #000; }
+    color: black; }
+  /* line 112, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:after {
     content: ''; }
+  /* line 126, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:before {
     bottom: -9px;
     top: auto;
@@ -358,6 +424,7 @@ html.touch #expertise div[data-tooltip] {
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
+  /* line 130, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:after {
     content: '';
     display: block;
@@ -370,14 +437,18 @@ html.touch #expertise div[data-tooltip] {
     border-top: none;
     bottom: -9px;
     top: auto; }
+  /* line 138, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:before, html.touch #expertise div[data-tooltip]:after {
     left: 50%;
     right: auto;
     margin-left: -6px; }
+  /* line 142, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:before {
     margin-left: -18px; }
+  /* line 154, ../sass/_tooltips.scss */
   html.touch #expertise div[data-tooltip]:hover {
     /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+    /* line 156, ../sass/_tooltips.scss */
     html.touch #expertise div[data-tooltip]:hover:before, html.touch #expertise div[data-tooltip]:hover:after {
       opacity: 1;
       pointer-events: all;
@@ -385,14 +456,18 @@ html.touch #expertise div[data-tooltip] {
       -o-transition-delay: 0ms;
       -webkit-transition-delay: 0ms;
       transition-delay: 0ms; }
+  /* line 169, ../sass/main.scss */
   html.touch #expertise div[data-tooltip]::before, html.touch #expertise div[data-tooltip]::after {
     opacity: 1;
     display: block; }
+  /* line 173, ../sass/main.scss */
   html.touch #expertise div[data-tooltip]::before {
     margin-left: -62%; }
 
+/* line 179, ../sass/main.scss */
 html.no-touch #expertise div[data-tooltip].ne {
   position: relative; }
+  /* line 86, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:before, html.no-touch #expertise div[data-tooltip].ne:after {
     opacity: 0;
     z-index: 98;
@@ -402,8 +477,10 @@ html.no-touch #expertise div[data-tooltip].ne {
     transition: opacity 300ms, visibility 0ms linear 300ms;
     pointer-events: none; }
     @media (max-width: 480px) {
+      /* line 86, ../sass/_tooltips.scss */
       html.no-touch #expertise div[data-tooltip].ne:before, html.no-touch #expertise div[data-tooltip].ne:after {
         display: none; } }
+  /* line 93, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -417,9 +494,11 @@ html.no-touch #expertise div[data-tooltip].ne {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     background-color: #eeeeee;
-    color: #000; }
+    color: black; }
+  /* line 112, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:after {
     content: ''; }
+  /* line 116, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:before {
     top: -9px;
     bottom: auto;
@@ -428,6 +507,7 @@ html.no-touch #expertise div[data-tooltip].ne {
     -ms-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%); }
+  /* line 120, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:after {
     content: '';
     display: block;
@@ -440,14 +520,18 @@ html.no-touch #expertise div[data-tooltip].ne {
     border-bottom: none;
     top: -9px;
     bottom: auto; }
+  /* line 138, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:before, html.no-touch #expertise div[data-tooltip].ne:after {
     left: 50%;
     right: auto;
     margin-left: -6px; }
+  /* line 142, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:before {
     margin-left: -18px; }
+  /* line 154, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].ne:hover {
     /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+    /* line 156, ../sass/_tooltips.scss */
     html.no-touch #expertise div[data-tooltip].ne:hover:before, html.no-touch #expertise div[data-tooltip].ne:hover:after {
       opacity: 1;
       pointer-events: all;
@@ -455,8 +539,10 @@ html.no-touch #expertise div[data-tooltip].ne {
       -o-transition-delay: 0ms;
       -webkit-transition-delay: 0ms;
       transition-delay: 0ms; }
+/* line 182, ../sass/main.scss */
 html.no-touch #expertise div[data-tooltip].nw {
   position: relative; }
+  /* line 86, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:before, html.no-touch #expertise div[data-tooltip].nw:after {
     opacity: 0;
     z-index: 98;
@@ -466,8 +552,10 @@ html.no-touch #expertise div[data-tooltip].nw {
     transition: opacity 300ms, visibility 0ms linear 300ms;
     pointer-events: none; }
     @media (max-width: 480px) {
+      /* line 86, ../sass/_tooltips.scss */
       html.no-touch #expertise div[data-tooltip].nw:before, html.no-touch #expertise div[data-tooltip].nw:after {
         display: none; } }
+  /* line 93, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -481,9 +569,11 @@ html.no-touch #expertise div[data-tooltip].nw {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     background-color: #eeeeee;
-    color: #000; }
+    color: black; }
+  /* line 112, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:after {
     content: ''; }
+  /* line 116, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:before {
     top: -9px;
     bottom: auto;
@@ -492,6 +582,7 @@ html.no-touch #expertise div[data-tooltip].nw {
     -ms-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%); }
+  /* line 120, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:after {
     content: '';
     display: block;
@@ -504,14 +595,18 @@ html.no-touch #expertise div[data-tooltip].nw {
     border-bottom: none;
     top: -9px;
     bottom: auto; }
+  /* line 145, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:before, html.no-touch #expertise div[data-tooltip].nw:after {
     right: 50%;
     left: auto;
     margin-right: -6px; }
+  /* line 149, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:before {
     margin-right: -18px; }
+  /* line 154, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].nw:hover {
     /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+    /* line 156, ../sass/_tooltips.scss */
     html.no-touch #expertise div[data-tooltip].nw:hover:before, html.no-touch #expertise div[data-tooltip].nw:hover:after {
       opacity: 1;
       pointer-events: all;
@@ -519,8 +614,10 @@ html.no-touch #expertise div[data-tooltip].nw {
       -o-transition-delay: 0ms;
       -webkit-transition-delay: 0ms;
       transition-delay: 0ms; }
+/* line 185, ../sass/main.scss */
 html.no-touch #expertise div[data-tooltip].se {
   position: relative; }
+  /* line 86, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:before, html.no-touch #expertise div[data-tooltip].se:after {
     opacity: 0;
     z-index: 98;
@@ -530,8 +627,10 @@ html.no-touch #expertise div[data-tooltip].se {
     transition: opacity 300ms, visibility 0ms linear 300ms;
     pointer-events: none; }
     @media (max-width: 480px) {
+      /* line 86, ../sass/_tooltips.scss */
       html.no-touch #expertise div[data-tooltip].se:before, html.no-touch #expertise div[data-tooltip].se:after {
         display: none; } }
+  /* line 93, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -545,9 +644,11 @@ html.no-touch #expertise div[data-tooltip].se {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     background-color: #eeeeee;
-    color: #000; }
+    color: black; }
+  /* line 112, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:after {
     content: ''; }
+  /* line 126, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:before {
     bottom: -9px;
     top: auto;
@@ -556,6 +657,7 @@ html.no-touch #expertise div[data-tooltip].se {
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
+  /* line 130, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:after {
     content: '';
     display: block;
@@ -568,14 +670,18 @@ html.no-touch #expertise div[data-tooltip].se {
     border-top: none;
     bottom: -9px;
     top: auto; }
+  /* line 138, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:before, html.no-touch #expertise div[data-tooltip].se:after {
     left: 50%;
     right: auto;
     margin-left: -6px; }
+  /* line 142, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:before {
     margin-left: -18px; }
+  /* line 154, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].se:hover {
     /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+    /* line 156, ../sass/_tooltips.scss */
     html.no-touch #expertise div[data-tooltip].se:hover:before, html.no-touch #expertise div[data-tooltip].se:hover:after {
       opacity: 1;
       pointer-events: all;
@@ -583,8 +689,10 @@ html.no-touch #expertise div[data-tooltip].se {
       -o-transition-delay: 0ms;
       -webkit-transition-delay: 0ms;
       transition-delay: 0ms; }
+/* line 188, ../sass/main.scss */
 html.no-touch #expertise div[data-tooltip].sw {
   position: relative; }
+  /* line 86, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:before, html.no-touch #expertise div[data-tooltip].sw:after {
     opacity: 0;
     z-index: 98;
@@ -594,8 +702,10 @@ html.no-touch #expertise div[data-tooltip].sw {
     transition: opacity 300ms, visibility 0ms linear 300ms;
     pointer-events: none; }
     @media (max-width: 480px) {
+      /* line 86, ../sass/_tooltips.scss */
       html.no-touch #expertise div[data-tooltip].sw:before, html.no-touch #expertise div[data-tooltip].sw:after {
         display: none; } }
+  /* line 93, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:before {
     content: attr(data-tooltip);
     position: absolute;
@@ -609,9 +719,11 @@ html.no-touch #expertise div[data-tooltip].sw {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     background-color: #eeeeee;
-    color: #000; }
+    color: black; }
+  /* line 112, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:after {
     content: ''; }
+  /* line 126, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:before {
     bottom: -9px;
     top: auto;
@@ -620,6 +732,7 @@ html.no-touch #expertise div[data-tooltip].sw {
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
+  /* line 130, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:after {
     content: '';
     display: block;
@@ -632,14 +745,18 @@ html.no-touch #expertise div[data-tooltip].sw {
     border-top: none;
     bottom: -9px;
     top: auto; }
+  /* line 145, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:before, html.no-touch #expertise div[data-tooltip].sw:after {
     right: 50%;
     left: auto;
     margin-right: -6px; }
+  /* line 149, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:before {
     margin-right: -18px; }
+  /* line 154, ../sass/_tooltips.scss */
   html.no-touch #expertise div[data-tooltip].sw:hover {
     /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- http://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */ }
+    /* line 156, ../sass/_tooltips.scss */
     html.no-touch #expertise div[data-tooltip].sw:hover:before, html.no-touch #expertise div[data-tooltip].sw:hover:after {
       opacity: 1;
       pointer-events: all;
@@ -648,26 +765,33 @@ html.no-touch #expertise div[data-tooltip].sw {
       -webkit-transition-delay: 0ms;
       transition-delay: 0ms; }
 
+/* line 193, ../sass/main.scss */
 #testimonials {
   background: url(../img/testimonials.png); }
+  /* line 195, ../sass/main.scss */
   #testimonials .carousel {
     position: relative;
     overflow: auto;
     padding-bottom: 2em; }
+    /* line 199, ../sass/main.scss */
     #testimonials .carousel li {
       list-style: none; }
+    /* line 202, ../sass/main.scss */
     #testimonials .carousel ul li {
       float: left;
       padding-top: 5px; }
 
+/* line 209, ../sass/main.scss */
 #portfolio {
   background: #b5dbe9; }
+  /* line 211, ../sass/main.scss */
   #portfolio img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%; }
+  /* line 214, ../sass/main.scss */
   #portfolio .hover {
     position: absolute;
     width: 100%;
@@ -682,16 +806,20 @@ html.no-touch #expertise div[data-tooltip].sw {
     -o-border-radius: 50%;
     border-radius: 50%;
     z-index: 10; }
+  /* line 225, ../sass/main.scss */
   #portfolio .col {
     width: 80%; }
+  /* line 228, ../sass/main.scss */
   #portfolio .col:hover .hover {
     height: 100%;
     opacity: 1; }
+  /* line 232, ../sass/main.scss */
   #portfolio .hoverInner {
     position: relative;
     height: 0;
     opacity: 0;
     text-align: center; }
+  /* line 238, ../sass/main.scss */
   #portfolio .col:hover .hoverInner {
     height: 100%;
     opacity: 1;
@@ -699,7 +827,9 @@ html.no-touch #expertise div[data-tooltip].sw {
     -moz-transition: all 1000ms ease-in-out 0s;
     -o-transition: all 1000ms ease-in-out 0s;
     transition: all 1000ms ease-in-out 0s;
-    top: 20%; }
+    top: 0;
+    margin-top: 30%; }
+  /* line 245, ../sass/main.scss */
   #portfolio .cta {
     cursor: pointer;
     background: #29221d;
@@ -713,34 +843,45 @@ html.no-touch #expertise div[data-tooltip].sw {
     color: white;
     width: 85px;
     margin: 0 auto; }
+    /* line 254, ../sass/main.scss */
     #portfolio .cta a {
       color: white; }
+  /* line 258, ../sass/main.scss */
   #portfolio .box-content {
     display: none; }
 
+/* line 264, ../sass/main.scss */
 #expertise .col, #portfolio .col {
   cursor: help;
   text-align: center; }
 
+/* line 270, ../sass/main.scss */
 #contact {
   background: #29221d; }
+  /* line 272, ../sass/main.scss */
   #contact h2, #contact p {
     color: white; }
+  /* line 275, ../sass/main.scss */
   #contact .col {
     width: 100%;
     margin: 0 auto; }
+    /* line 278, ../sass/main.scss */
     #contact .col a {
       color: white; }
+  /* line 282, ../sass/main.scss */
   #contact .textfield, #contact .textarea {
     padding: 0 0 20px; }
+  /* line 285, ../sass/main.scss */
   #contact #resultMessage p {
     color: #d9513b;
     margin-left: 10px;
     font-size: 1em; }
+  /* line 290, ../sass/main.scss */
   #contact #contactForm label {
     font-size: 1.5em;
     cursor: pointer;
     display: block; }
+  /* line 295, ../sass/main.scss */
   #contact textarea, #contact input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -759,14 +900,18 @@ html.no-touch #expertise div[data-tooltip].sw {
     -o-border-radius: 4px;
     border-radius: 4px;
     outline: none; }
+    /* line 309, ../sass/main.scss */
     #contact textarea:focus, #contact input:focus {
       box-shadow: none;
       border: 1px solid #d9513b; }
+  /* line 314, ../sass/main.scss */
   #contact textarea {
     height: 10em; }
+  /* line 317, ../sass/main.scss */
   #contact input {
     margin: 0 0 10px;
     height: 40px; }
+  /* line 321, ../sass/main.scss */
   #contact #submit {
     cursor: pointer;
     -webkit-box-sizing: border-box;
@@ -788,19 +933,25 @@ html.no-touch #expertise div[data-tooltip].sw {
     -moz-transition: background-color 0.5s ease;
     -o-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease; }
+    /* line 335, ../sass/main.scss */
     #contact #submit:hover {
       background: #dd6450; }
 
+/* line 342, ../sass/main.scss */
 #footer #copyright {
   text-align: left;
   font-size: 1.25em;
   line-height: 2.5em; }
+/* line 347, ../sass/main.scss */
 #footer .credit {
   font-size: .6em; }
+/* line 350, ../sass/main.scss */
 #footer #social {
   float: right; }
+  /* line 352, ../sass/main.scss */
   #footer #social li {
     float: left; }
+    /* line 354, ../sass/main.scss */
     #footer #social li a {
       display: block;
       height: 60px;
@@ -811,45 +962,58 @@ html.no-touch #expertise div[data-tooltip].sw {
       -moz-transition: background-position 0.5s ease;
       -o-transition: background-position 0.5s ease;
       transition: background-position 0.5s ease; }
+      /* line 361, ../sass/main.scss */
       #footer #social li a:hover {
         background-position-y: -60px; }
+  /* line 366, ../sass/main.scss */
   #footer #social .behance {
     background-color: #0686f1;
     background-position: 0 0; }
+  /* line 370, ../sass/main.scss */
   #footer #social .dribbble {
     background-color: #d8457d;
     background-position: -60px 0; }
+  /* line 374, ../sass/main.scss */
   #footer #social .facebook {
     background-color: #07549f;
     background-position: -120px 0; }
+  /* line 378, ../sass/main.scss */
   #footer #social .github {
     background-color: #bbbbbb;
     background-position: -180px 0; }
+  /* line 382, ../sass/main.scss */
   #footer #social .googleplus {
     background-color: #272727;
     background-position: -240px 0; }
+  /* line 386, ../sass/main.scss */
   #footer #social .linkedin {
     background-color: #017eb4;
     background-position: -300px 0; }
+  /* line 390, ../sass/main.scss */
   #footer #social .twitter {
     background-color: #29a9e1;
     background-position: -360px 0; }
 
 /* Responsive - Extra Small */
 @media (min-width: 320px) {
+  /* line 399, ../sass/main.scss */
   #masthead {
     background-image: url(../img/header-xsmall.png); } }
 /* Responsive - Small (Default) */
 /* Responsive - Medium */
 @media only screen and (min-width: 768px) {
+  /* line 409, ../sass/main.scss */
   #masthead {
     background-image: url(../img/header-medium.png); }
 
+  /* line 412, ../sass/main.scss */
   #navigation nav li {
     line-height: 3.5em; }
 
+  /* line 416, ../sass/main.scss */
   #welcome.is-fixed {
     margin-top: 2em; }
+  /* line 419, ../sass/main.scss */
   #welcome img {
     float: left;
     width: 15em;
@@ -862,25 +1026,29 @@ html.no-touch #expertise div[data-tooltip].sw {
     -o-border-radius: 50%;
     border-radius: 50%; }
 
+  /* line 429, ../sass/main.scss */
   #portfolio .col {
     width: 45%;
     margin: 1em; } }
 /* Responsive - Large */
 @media only screen and (min-width: 960px) {
+  /* line 438, ../sass/main.scss */
   #masthead {
     background-image: url(../img/header-large.png); }
 
+  /* line 441, ../sass/main.scss */
   #portfolio .col {
     width: 29%; } }
 /* Responsive - Extra Large */
 @media only screen and (min-width: 1280px) {
+  /* line 448, ../sass/main.scss */
   #masthead {
     background-image: url(../img/header-xlarge.png); }
 
+  /* line 451, ../sass/main.scss */
   #expertise .col {
     margin: 0 3em 6em; } }
 /* Colorbox alterations */
+/* line 457, ../sass/main.scss */
 #cboxTitle {
   margin-bottom: 30px !important; }
-
-/*# sourceMappingURL=main.css.map */
