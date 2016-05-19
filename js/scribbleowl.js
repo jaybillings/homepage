@@ -89,7 +89,6 @@
 
             /* Section highlighting */
             currentSection = findCurrentSection();
-            console.log(currentSection);
             showCurrentSection(currentSection);
         });
 	});
