@@ -265,7 +265,7 @@ blockquote {
     #navigation nav li {
       display: inline;
       font-size: 1.125em;
-      line-height: 3.5em;
+      line-height: 2.5em;
       margin-right: 0.5em; }
       #navigation nav li a {
         padding: 0.5em;
@@ -692,10 +692,6 @@ html.no-touch #expertise div[data-tooltip].sw {
     height: 0;
     opacity: 0;
     text-align: center; }
-    #portfolio .hoverInner h3 {
-      font-size: 2.5em; }
-    #portfolio .hoverInner p {
-      font-size: 1.5em; }
   #portfolio .col:hover .hoverInner {
     height: 100%;
     opacity: 1;
@@ -849,6 +845,9 @@ html.no-touch #expertise div[data-tooltip].sw {
   #masthead {
     background-image: url(../img/header-medium.png); }
 
+  #navigation nav li {
+    line-height: 3.5em; }
+
   #welcome.is-fixed {
     margin-top: 2em; }
   #welcome img {
@@ -865,11 +864,7 @@ html.no-touch #expertise div[data-tooltip].sw {
 
   #portfolio .col {
     width: 45%;
-    margin: 1em; }
-  #portfolio .hoverInner h3 {
-    font-size: 1.5em; }
-  #portfolio .hoverInner p {
-    font-size: 1em; } }
+    margin: 1em; } }
 /* Responsive - Large */
 @media only screen and (min-width: 960px) {
   #masthead {

@@ -101,7 +101,7 @@ blockquote {
 		li {
 			display: inline;
 			font-size: 1.125em;
-			line-height: 3.5em;
+			line-height: 2.5em;
 			margin-right: 0.5em;
 			a {
 				padding: 0.5em;
@@ -234,12 +234,6 @@ html.no-touch #expertise div[data-tooltip] {
 		height: 0;
 		opacity: 0;
 		text-align: center;
-        h3 {
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.5em;
-        }
 	}
 	.col:hover .hoverInner {
 		height: 100%;
@@ -414,6 +408,9 @@ html.no-touch #expertise div[data-tooltip] {
     #masthead {
         background-image: url(../img/header-medium.png);
     }
+    #navigation nav li {
+        line-height: 3.5em;
+    }
     #welcome {
         &.is-fixed {
             margin-top: 2em;
@@ -431,14 +428,6 @@ html.no-touch #expertise div[data-tooltip] {
         .col {
             width: 45%;
             margin: 1em;
-        }
-        .hoverInner {
-            h3 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1em;
-            }
         }
     }
 }
