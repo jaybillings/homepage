@@ -77,14 +77,14 @@
                 currentSection;
 
             /* Scroll-to-fixed navigation */
-            if (windowTop < ($masthead.offset().top + $masthead.height())) {
+            if (windowTop > ($masthead.offset().top + $masthead.outerHeight())) {
+                $nav.addClass('is-fixed');
+                $nav.removeClass('scroll');
+                $welcome.css('margin-top', $nav.height() + 'px');
+            } else {
                 $nav.addClass('scroll');
                 $nav.removeClass('is-fixed');
-                $welcome.removeClass('is-fixed');
-            } else {
-                $nav.addClass('is-fixed');
-                $welcome.addClass('is-fixed');
-                $nav.removeClass('scroll');
+                $welcome.css('margin-top', '0');
             }
 
             /* Section highlighting */
